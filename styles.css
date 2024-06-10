@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.banner{
+    padding: 20px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.video-section, .image-section, .timeline-section, .document-section {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.video-section h2, .image-section h2, .timeline-section h2, .document-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+img {
+    max-width: 46%;
+    height: auto;
+}
+
+.separator {
+    height: 2px;
+    background-color: #ddd;
+    width: 80%;
+}
+
+.timeline-item {
+    margin-bottom: 10px;
+}
+
+.timeline-item p, .document-item p {
+    margin: 0;
+}
+
+.timeline-item span, .document-item span {
+    color: #666;
+}
+
+.footer {
+    background-color: #382e2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #4c5baf;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
