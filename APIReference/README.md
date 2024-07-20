@@ -74,8 +74,6 @@ Leanbot API Reference
 - [Leanbot.DCMotor.setPower](#Leanbot.DCMotor.setPower)
 
 
-[Leanbot IoT](README_LeanbotIoT.md)
-
 &nbsp;
 ---
 
