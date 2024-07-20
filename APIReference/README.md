@@ -5,23 +5,23 @@ Leanbot API Reference
 
 [Leanbot](#Leanbot)
 - [Leanbot.begin](#Leanbot.begin)
-- [LbDelay (blocking)](#LbDelay-%28blocking%29)
-- [LbMission.begin (blocking)](#LbMission.begin-%28blocking%29)
-- [LbMission.beginDigitalTwin (blocking)](#LbMission.beginDigitalTwin-%28blocking%29)
-- [LbMission.end (blocking)](#LbMission.end-%28blocking%29)
+- [LbDelay ](#LbDelay)
+- [LbMission.begin ](#LbMission.begin)
+- [LbMission.beginDigitalTwin ](#LbMission.beginDigitalTwin)
+- [LbMission.end ](#LbMission.end)
 - [LbMission.elapsedMillis](#LbMission.elapsedMillis)
 
 
 [Motion (actuator)](#Motion)
 - [LbMotion.runLR](#LbMotion.runLR)
 - [LbMotion.runLRrpm](#LbMotion.runLRrpm)
-- [LbMotion.stopAndWait (blocking)](#LbMotion.stopAndWait-%28blocking%29)
+- [LbMotion.stopAndWait ](#LbMotion.stopAndWait)
 - [LbMotion.isStop](#LbMotion.isStop)
 - [LbMotion.isMoving](#LbMotion.isMoving)
-- [LbMotion.waitDistance (blocking)](#LbMotion.waitDistance-%28blocking%29)
-- [LbMotion.waitDistanceMm (blocking)](#LbMotion.waitDistanceMm-%28blocking%29)
-- [LbMotion.waitRotation (blocking)](#LbMotion.waitRotation-%28blocking%29)
-- [LbMotion.waitRotationDeg (blocking)](#LbMotion.waitRotationDeg-%28blocking%29)
+- [LbMotion.waitDistance ](#LbMotion.waitDistance)
+- [LbMotion.waitDistanceMm ](#LbMotion.waitDistanceMm)
+- [LbMotion.waitRotation ](#LbMotion.waitRotation)
+- [LbMotion.waitRotationDeg ](#LbMotion.waitRotationDeg)
 - [LbMotion.getDistance](#LbMotion.getDistance)
 - [LbMotion.getDistanceMm](#LbMotion.getDistanceMm)
 - [LbMotion.getRotation](#LbMotion.getRotation)
@@ -29,10 +29,10 @@ Leanbot API Reference
 
 
 [Gripper (actuator)](#Gripper)
-- [LbGripper.open (blocking)](#LbGripper.open-%28blocking%29)
-- [LbGripper.close (blocking)](#LbGripper.close-%28blocking%29)
-- [LbGripper.moveTo (blocking)](#LbGripper.moveTo-%28blocking%29)
-- [LbGripper.moveToLR (blocking)](#LbGripper.moveToLR-%28blocking%29)
+- [LbGripper.open ](#LbGripper.open)
+- [LbGripper.close ](#LbGripper.close)
+- [LbGripper.moveTo ](#LbGripper.moveTo)
+- [LbGripper.moveToLR ](#LbGripper.moveToLR)
 - [LbGripper.readL](#LbGripper.readL)
 - [LbGripper.readR](#LbGripper.readR)
 
@@ -66,7 +66,7 @@ Leanbot API Reference
 - [LbIRLine.print](#LbIRLine.print)
 - [LbIRLine.displayOnRGB](#LbIRLine.displayOnRGB)
 - [LbIRLine.isBlackDetected](#LbIRLine.isBlackDetected)
-- [LbIRLine.doManualCalibration (blocking)](#LbIRLine.doManualCalibration-%28blocking%29)
+- [LbIRLine.doManualCalibration ](#LbIRLine.doManualCalibration)
 - [LbIRArray.read](#LbIRArray.read)
 
 
@@ -114,7 +114,7 @@ This function must be called at the beginning in the `setup` function.
 ---
 
 [[ Leanbot ]](#Leanbot)
-## LbDelay (blocking)
+## LbDelay 
 
 ### Description
 This function makes the program wait (blocking the program flow) until a specified delay time has elapsed, then process the next line of code.
@@ -150,7 +150,7 @@ The maximum delay time is `65,535` milliseconds (≈ 65.5 seconds)
 ---
 
 [[ Leanbot ]](#Leanbot)
-## LbMission.begin (blocking)
+## LbMission.begin 
 
 ### Description
 Leanbot waits (blocking the program flow) for the signal to start the mission by simultaneously touching both `TB1A` and `TB1B` buttons on the front of Leanbot.
@@ -180,7 +180,7 @@ LbMission.begin();
 ---
 
 [[ Leanbot ]](#Leanbot)
-## LbMission.beginDigitalTwin (blocking)
+## LbMission.beginDigitalTwin 
 
 ### Description
 This function sends the mission name to the server, then Leanbot waits (blocking the program flow) for the signal to start the mission by one of the following:
@@ -215,7 +215,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot)
-## LbMission.end (blocking)
+## LbMission.end 
 
 ### Description
 This function
@@ -351,7 +351,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
-## LbMotion.stopAndWait (blocking)
+## LbMotion.stopAndWait 
 
 ### Description
 This function stops Leanbot and waits (blocking the program flow) until Leanbot has decelerated to a complete stop.
@@ -437,7 +437,7 @@ bool isMoving = LbMotion.isMoving();
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
-## LbMotion.waitDistance (blocking)
+## LbMotion.waitDistance 
 
 ### Description
 The program waits (blocking the program flow) in this function until Leanbot travels the desired distance in steps.
@@ -470,7 +470,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
-## LbMotion.waitDistanceMm (blocking)
+## LbMotion.waitDistanceMm 
 
 ### Description
 The program waits (blocking the program flow) until Leanbot has moved by (approximately) distance in millimeters.
@@ -503,7 +503,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
-## LbMotion.waitRotation (blocking)
+## LbMotion.waitRotation 
 
 ### Description
 The program waits (blocking the program flow) until Leanbot has rotated by (approximately) the desired steps.
@@ -541,7 +541,7 @@ Experiment and rotation adjustment are required to find the step value correspon
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
-## LbMotion.waitRotationDeg (blocking)
+## LbMotion.waitRotationDeg 
 
 ### Description
 The program waits (blocking the program flow) until Leanbot has rotated by (approximately) the desired degrees.
@@ -685,7 +685,7 @@ long rotationDegree = LbMotion.getRotationDeg();
 # Gripper (actuator)
 ![Screenshot](image/LbGripper.png)
 
-## LbGripper.open (blocking)
+## LbGripper.open 
 
 ### Description
 This function moves gripper arms to open position (both arms at 0 degree position - perpendicular to the surface)
@@ -713,7 +713,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper)
-## LbGripper.close (blocking)
+## LbGripper.close 
 
 ### Description
 This function moves gripper arms to close position (both arms at 90 degree position - parallel to the surface)
@@ -742,7 +742,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper)
-## LbGripper.moveTo (blocking)
+## LbGripper.moveTo 
 
 ### Description
 This function moves both gripper arms to the same desired angle.
@@ -774,7 +774,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper)
-## LbGripper.moveToLR (blocking)
+## LbGripper.moveToLR 
 
 ### Description
 This function moves both gripper arms to their desired angles for a desired amount of time (blocking the program flow).
@@ -1426,7 +1426,7 @@ LbMotion.stopAndWait();                  // stop
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
-## LbIRLine.doManualCalibration (blocking)
+## LbIRLine.doManualCalibration 
 
 ### Description
 This function does 3-step light level calibration with touch button.
