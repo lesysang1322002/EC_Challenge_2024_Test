@@ -5,10 +5,10 @@ Leanbot API Reference
 
 [Leanbot](#Leanbot)
 - [Leanbot.begin](#Leanbot.begin)
-- [LbDelay ](#LbDelay)
-- [LbMission.begin ](#LbMission.begin)
-- [LbMission.beginDigitalTwin ](#LbMission.beginDigitalTwin)
-- [LbMission.end ](#LbMission.end)
+- [LbDelay](#LbDelay)
+- [LbMission.begin](#LbMission.begin)
+- [LbMission.beginDigitalTwin](#LbMission.beginDigitalTwin)
+- [LbMission.end](#LbMission.end)
 - [LbMission.elapsedMillis](#LbMission.elapsedMillis)
 
 
