@@ -65,6 +65,10 @@ Leanbot API Reference
 - [LbIRArray.read](#LbIRArray.read)
 
 
+[DC Motor (actuator)](#DC-Motor-%28actuator%29)
+- [Leanbot.DCMotor.setPower](#Leanbot.DCMotor.setPower)
+
+
 &nbsp;
 ---
 
