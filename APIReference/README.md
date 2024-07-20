@@ -6,6 +6,11 @@ Leanbot API Reference
 [Leanbot](#Leanbot)
 - [Leanbot.begin](#Leanbot.begin)
 - [LbDelay (blocking)](#LbDelay-%28blocking%29)
+- [LbMission.begin (blocking)](#LbMission.begin-%28blocking%29)
+- [LbMission.beginDigitalTwin (blocking)](#LbMission.beginDigitalTwin-%28blocking%29)
+- [LbMission.end (blocking)](#LbMission.end-%28blocking%29)
+- [LbMission.elapsedMillis](#LbMission.elapsedMillis)
+
 
 [Motion (actuator)](#Motion-%28actuator%29)
 - [LbMotion.runLR](#LbMotion.runLR)
@@ -68,6 +73,8 @@ Leanbot API Reference
 [DC Motor (actuator)](#DC-Motor-%28actuator%29)
 - [Leanbot.DCMotor.setPower](#Leanbot.DCMotor.setPower)
 
+
+[Leanbot IoT](README_LeanbotIoT.md)
 
 &nbsp;
 ---
@@ -141,6 +148,133 @@ The maximum delay time is `65,535` milliseconds (≈ 65.5 seconds)
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
 ---
+
+[[ Leanbot ]](#Leanbot)
+## LbMission.begin (blocking)
+
+### Description
+Leanbot waits (blocking the program flow) for the signal to start the mission by simultaneously touching both `TB1A` and `TB1B` buttons on the front of Leanbot.
+
+When receiving the start signal:
+- Leanbot will emit the countdown sound `3` – `2` – `1`
+- then starts the mission, do tasks
+
+### Syntax
+```
+LbMission.begin()
+```
+
+### Parameters
+None
+
+### Returns
+None
+
+### Example
+```
+LbMission.begin();
+```
+
+[🔼 Back to top](#leanbot-api-reference)
+&nbsp;
+---
+
+[[ Leanbot ]](#Leanbot)
+## LbMission.beginDigitalTwin (blocking)
+
+### Description
+This function sends the mission name to the server, then Leanbot waits (blocking the program flow) for the signal to start the mission by one of the following:
+- Click the `Start` button on the Digital Twin web interface
+- Or simultaneously touch both `TB1A` and `TB1B` buttons on the front of Leanbot
+
+When receiving the start signal:
+- Leanbot will emit the countdown sound `3` – `2` – `1`
+- then starts the mission, do tasks
+
+### Syntax
+```
+LbMission.beginDigitalTwin(F( missionId ))
+```
+
+### Parameters
+- `missionId`: the name of mission
+  - Allowed data types: `string`
+
+### Returns
+None
+
+### Example
+```
+LbMission.beginDigitalTwin(F( "ms11.1" ));
+```
+See more:
+- [MissionDigitalTwin_ms1.1.ino](examples/LbMission/MissionDigitalTwin_ms1.1.ino)
+
+[🔼 Back to top](#leanbot-api-reference)
+&nbsp;
+---
+
+[[ Leanbot ]](#Leanbot)
+## LbMission.end (blocking)
+
+### Description
+This function
+- Stop Leanbot, end of mission
+- Stop the program flow completely
+
+### Syntax
+```
+LbMission.end()
+```
+
+### Parameters
+None
+
+### Returns
+None
+
+### Example
+```
+LbMission.end();
+```
+See more:
+- [MissionDigitalTwin_ms1.1.ino](examples/LbMission/MissionDigitalTwin_ms1.1.ino)
+
+### Notes and Warnings
+Leanbot does not run any code after this function
+
+[🔼 Back to top](#leanbot-api-reference)
+&nbsp;
+---
+
+[[ Leanbot ]](#Leanbot)
+## LbMission.elapsedMillis
+
+### Description
+This function returns the elapsed time since Leanbot started the mission.
+
+### Syntax
+```
+elapsedTimeMs = LbMission.elapsedMillis()
+```
+
+### Parameters
+None
+
+### Returns
+The elapsed time since Leanbot started the mission
+- Unit: ms
+- Data type: `long`
+
+### Example
+```
+long elapsedTimeMs = LbMission.elapsedMillis();
+```
+
+[🔼 Back to top](#leanbot-api-reference)
+&nbsp;
+---
+
 
 # Motion (actuator)
 ![Screenshot](image/Motion.png)
