@@ -81,7 +81,7 @@ Leanbot API Reference
 
 # Leanbot
 
-## Leanbot&#39;s begin
+## Leanbot&#46;begin
 
 ### Description
 This function initializes Leanbot
