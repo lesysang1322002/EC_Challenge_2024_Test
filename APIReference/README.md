@@ -61,6 +61,7 @@ Leanbot API Reference
 
 
 [IR Sensors](#IR Sensors)
+
 - [LbIRLine.read](#LbIRLine.read)
 - [LbIRLine.value](#LbIRLine.value)
 - [LbIRLine.print](#LbIRLine.print)
