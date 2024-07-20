@@ -12,7 +12,7 @@ Leanbot API Reference
 - [LbMission.elapsedMillis](#LbMission.elapsedMillis)
 
 
-[Motion (actuator)](#Motion-%28actuator%29)
+[Motion (actuator)](#Motion)
 - [LbMotion.runLR](#LbMotion.runLR)
 - [LbMotion.runLRrpm](#LbMotion.runLRrpm)
 - [LbMotion.stopAndWait (blocking)](#LbMotion.stopAndWait-%28blocking%29)
@@ -28,7 +28,7 @@ Leanbot API Reference
 - [LbMotion.getRotationDeg](#LbMotion.getRotationDeg)
 
 
-[Gripper (actuator)](#Gripper-%28actuator%29)
+[Gripper (actuator)](#Gripper)
 - [LbGripper.open (blocking)](#LbGripper.open-%28blocking%29)
 - [LbGripper.close (blocking)](#LbGripper.close-%28blocking%29)
 - [LbGripper.moveTo (blocking)](#LbGripper.moveTo-%28blocking%29)
@@ -37,12 +37,12 @@ Leanbot API Reference
 - [LbGripper.readR](#LbGripper.readR)
 
 
-[Buzzer (actuator)](#Buzzer-%28actuator%29)
+[Buzzer (actuator)](#Buzzer)
 - [Leanbot.tone](#Leanbot.tone)
 - [Leanbot.noTone](#Leanbot.noTone)
 
 
-[RGB Leds (actuator)](#RGB-Leds-%28actuator%29)
+[RGB Leds (actuator)](#RGB-Leds)
 - [LbRGB.show](#LbRGB.show)
 - [LbRGB.clear](#LbRGB.clear)
 - [LbRGB[ ]](#LbRGB[-])
@@ -70,7 +70,7 @@ Leanbot API Reference
 - [LbIRArray.read](#LbIRArray.read)
 
 
-[DC Motor (actuator)](#DC-Motor-%28actuator%29)
+[DC Motor (actuator)](#DC-Motor)
 - [Leanbot.DCMotor.setPower](#Leanbot.DCMotor.setPower)
 
 
@@ -314,7 +314,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.runLRrpm
 
 ### Description
@@ -350,7 +350,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.stopAndWait (blocking)
 
 ### Description
@@ -380,7 +380,7 @@ The higher the speed the Leanbot is running, the longer it takes to stop. The di
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.isStop
 
 ### Description
@@ -408,7 +408,7 @@ bool isStop = LbMotion.isStop();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.isMoving
 
 ### Description
@@ -436,7 +436,7 @@ bool isMoving = LbMotion.isMoving();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.waitDistance (blocking)
 
 ### Description
@@ -469,7 +469,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.waitDistanceMm (blocking)
 
 ### Description
@@ -502,7 +502,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.waitRotation (blocking)
 
 ### Description
@@ -540,7 +540,7 @@ Experiment and rotation adjustment are required to find the step value correspon
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.waitRotationDeg (blocking)
 
 ### Description
@@ -570,7 +570,7 @@ LbMotion.waitRotationDeg(180);     // wait for Leanbot to rotate approximately 1
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.getDistance
 
 ### Description
@@ -598,7 +598,7 @@ long distance = LbMotion.getDistance();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.getDistanceMm
 
 ### Description
@@ -626,7 +626,7 @@ long distanceMm = LbMotion.getDistanceMm();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.getRotation
 
 ### Description
@@ -654,7 +654,7 @@ long rotation = LbMotion.getRotation();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Motion (actuator) ]](#Motion)
 ## LbMotion.getRotationDeg
 
 ### Description
@@ -712,7 +712,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper)
 ## LbGripper.close (blocking)
 
 ### Description
@@ -741,7 +741,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper)
 ## LbGripper.moveTo (blocking)
 
 ### Description
@@ -773,7 +773,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper)
 ## LbGripper.moveToLR (blocking)
 
 ### Description
@@ -809,7 +809,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper)
 ## LbGripper.readL
 
 ### Description
@@ -838,7 +838,7 @@ int angleL = LbGripper.readL();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Gripper (actuator) ]](#Gripper)
 ## LbGripper.readR
 
 ### Description
@@ -910,7 +910,7 @@ the sketch execution will continue immediately even if the tone hasn't finished 
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Buzzer (actuator) ]](#Buzzer-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ Buzzer (actuator) ]](#Buzzer)
 ## Leanbot.noTone
 
 ### Description
@@ -989,7 +989,7 @@ This function must be called after updating the color of the Leds.
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ RGB Leds (actuator) ]](#RGB-Leds-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ RGB Leds (actuator) ]](#RGB-Leds)
 ## LbRGB.clear
 
 ### Description
@@ -1015,7 +1015,7 @@ LbRGB.clear();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ RGB Leds (actuator) ]](#RGB-Leds-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ RGB Leds (actuator) ]](#RGB-Leds)
 ## LbRGB[ ]
 
 ### Description
@@ -1051,7 +1051,7 @@ This function only updates the color value of a led
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ RGB Leds (actuator) ]](#RGB-Leds-%28actuator%29)
+[[ Leanbot ]](#Leanbot) / [[ RGB Leds (actuator) ]](#RGB-Leds)
 ## LbRGB.fillColor
 
 ### Description
