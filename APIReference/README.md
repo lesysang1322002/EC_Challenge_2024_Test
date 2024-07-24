@@ -4,37 +4,37 @@ Leanbot API Reference
 [Arduino basic reference](https://www.arduino.cc/reference/en/)
 
 [Leanbot](#Leanbot)
-- [Leanbot.begin](#Leanbot.begin)
+- [Leanbot.begin](#Leanbotbegin)
 - [LbDelay](#LbDelay)
-- [LbMission.begin](#LbMission.begin)
-- [LbMission.beginDigitalTwin](#LbMission.beginDigitalTwin)
-- [LbMission.end](#LbMission.end)
-- [LbMission.elapsedMillis](#LbMission.elapsedMillis)
+- [LbMission.begin](#LbMissionbegin)
+- [LbMission.beginDigitalTwin](#LbMissionbeginDigitalTwin)
+- [LbMission.end](#LbMissionend)
+- [LbMission.elapsedMillis](#LbMissionelapsedMillis)
 
 
 [Motion ](#Motion)
-- [LbMotion.runLR](#LbMotion.runLR)
-- [LbMotion.runLRrpm](#LbMotion.runLRrpm)
-- [LbMotion.stopAndWait ](#LbMotion.stopAndWait)
-- [LbMotion.isStop](#LbMotion.isStop)
-- [LbMotion.isMoving](#LbMotion.isMoving)
-- [LbMotion.waitDistance ](#LbMotion.waitDistance)
-- [LbMotion.waitDistanceMm ](#LbMotion.waitDistanceMm)
-- [LbMotion.waitRotation ](#LbMotion.waitRotation)
-- [LbMotion.waitRotationDeg ](#LbMotion.waitRotationDeg)
-- [LbMotion.getDistance](#LbMotion.getDistance)
-- [LbMotion.getDistanceMm](#LbMotion.getDistanceMm)
-- [LbMotion.getRotation](#LbMotion.getRotation)
-- [LbMotion.getRotationDeg](#LbMotion.getRotationDeg)
+- [LbMotion.runLR](#LbMotionrunLR)
+- [LbMotion.runLRrpm](#LbMotionrunLRrpm)
+- [LbMotion.stopAndWait ](#LbMotionstopAndWait)
+- [LbMotion.isStop](#LbMotionisStop)
+- [LbMotion.isMoving](#LbMotionisMoving)
+- [LbMotion.waitDistance ](#LbMotionwaitDistance)
+- [LbMotion.waitDistanceMm ](#LbMotionwaitDistanceMm)
+- [LbMotion.waitRotation ](#LbMotionwaitRotation)
+- [LbMotion.waitRotationDeg ](#LbMotionwaitRotationDeg)
+- [LbMotion.getDistance](#LbMotiongetDistance)
+- [LbMotion.getDistanceMm](#LbMotiongetDistanceMm)
+- [LbMotion.getRotation](#LbMotiongetRotation)
+- [LbMotion.getRotationDeg](#LbMotiongetRotationDeg)
 
 
 [Gripper ](#Gripper)
-- [LbGripper.open ](#LbGripper.open)
-- [LbGripper.close ](#LbGripper.close)
-- [LbGripper.moveTo ](#LbGripper.moveTo)
-- [LbGripper.moveToLR ](#LbGripper.moveToLR)
-- [LbGripper.readL](#LbGripper.readL)
-- [LbGripper.readR](#LbGripper.readR)
+- [LbGripper.open ](#LbGripperopen)
+- [LbGripper.close ](#LbGripperclose)
+- [LbGripper.moveTo ](#LbGrippermoveTo)
+- [LbGripper.moveToLR ](#LbGrippermoveToLR)
+- [LbGripper.readL](#LbGripperreadL)
+- [LbGripper.readR](#LbGripperreadR)
 
 
 [Buzzer ](#Buzzer)
@@ -43,35 +43,35 @@ Leanbot API Reference
 
 
 [RGB Leds ](#RGB-Leds)
-- [LbRGB.show](#LbRGB.show)
-- [LbRGB.clear](#LbRGB.clear)
+- [LbRGB.show](#LbRGBshow)
+- [LbRGB.clear](#LbRGBclear)
 - [LbRGB[ ]](#LbRGB[-])
-- [LbRGB.fillColor](#LbRGB.fillColor)
+- [LbRGB.fillColor](#LbRGBfillColor)
 
 
 [Touch Sensors](#Touch-Sensors)
-- [LbTouch.read](#LbTouch.read)
-- [LbTouch.readBits](#LbTouch.readBits)
+- [LbTouch.read](#LbTouchread)
+- [LbTouch.readBits](#LbTouchreadBits)
 - [LbTouch.onPress](#LbTouch.onPress)
 
 
 [Ultrasonic Sensor](#Ultrasonic-Sensor)
-- [Leanbot.pingCm](#Leanbot.pingCm)
-- [Leanbot.pingMm](#Leanbot.pingMm)
+- [Leanbot.pingCm](#LeanbotpingCm)
+- [Leanbot.pingMm](#LeanbotpingMm)
 
 
-[IR Sensors](#IR Sensors)
-- [LbIRLine.read](#LbIRLine.read)
-- [LbIRLine.value](#LbIRLine.value)
-- [LbIRLine.print](#LbIRLine.print)
-- [LbIRLine.displayOnRGB](#LbIRLine.displayOnRGB)
-- [LbIRLine.isBlackDetected](#LbIRLine.isBlackDetected)
-- [LbIRLine.doManualCalibration ](#LbIRLine.doManualCalibration)
-- [LbIRArray.read](#LbIRArray.read)
+[IR Sensors](#IR-Sensors)
+- [LbIRLine.read](#LbIRLineread)
+- [LbIRLine.value](#LbIRLinevalue)
+- [LbIRLine.print](#LbIRLineprint)
+- [LbIRLine.displayOnRGB](#LbIRLinedisplayOnRGB)
+- [LbIRLine.isBlackDetected](#LbIRLineisBlackDetected)
+- [LbIRLine.doManualCalibration ](#LbIRLinedoManualCalibration)
+- [LbIRArray.read](#LbIRArrayread)
 
 
 [DC Motor ](#DC-Motor)
-- [Leanbot.DCMotor.setPower](#Leanbot.DCMotor.setPower)
+- [Leanbot.DCMotor.setPower](#LeanbotDCMotorsetPower)
 
 
 [Leanbot IoT](README_LeanbotIoT.md)
@@ -81,23 +81,23 @@ Leanbot API Reference
 
 # Leanbot
 
-## Leanbot&#46;begin
+## Leanbot.begin
 
-### Description
+### Mô tả
 This function initializes Leanbot
 
-### Syntax
+### Cú pháp
 ```
 Leanbot.begin()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 #include <Leanbot.h>
 
@@ -106,7 +106,7 @@ void setup() {
 }
 ```
 
-### Notes and Warnings
+### Lưu ý
 This function must be called at the beginning in the `setup` function.
 
 [🔼 Back to top](#leanbot-api-reference)
@@ -116,33 +116,33 @@ This function must be called at the beginning in the `setup` function.
 [[ Leanbot ]](#Leanbot)
 ## LbDelay 
 
-### Description
+### Mô tả
 This function makes the program wait (blocking the program flow) until a specified delay time has elapsed, then process the next line of code.
 In the meantime, Leanbot keeps running at current velocities.
 
-### Syntax
+### Cú pháp
 ```
 LbDelay(timeMs)
 ```
 
-### Parameters
+### Biến số
 - `timeMs`: the number of milliseconds to wait (1000 milliseconds equals one second)
   - Unit: ms
   - Range: [0, 65535]
   - Allowed data types: `unsigned int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
-This example makes Leanbot moves forward at speed of 400 for 3 seconds, then stop
+### Ví dụ
+This Ví dụ makes Leanbot moves forward at speed of 400 for 3 seconds, then stop
 ```
 LbMotion.runLR(400, 400);    // let Leanbot move forward
 LbDelay(3000);               // wait for 3 seconds (Leanbot keeps moving forward)
 LbMotion.runLR(0, 0);        // stop Leanbot
 ```
 
-### Notes and Warnings
+### Lưu ý
 The maximum delay time is `65,535` milliseconds (≈ 65.5 seconds)
 
 [🔼 Back to top](#leanbot-api-reference)
@@ -150,27 +150,27 @@ The maximum delay time is `65,535` milliseconds (≈ 65.5 seconds)
 ---
 
 [[ Leanbot ]](#Leanbot)
-## LbMission.begin 
+## LbMission.begin
 
-### Description
+### Mô tả
 Leanbot waits (blocking the program flow) for the signal to start the mission by simultaneously touching both `TB1A` and `TB1B` buttons on the front of Leanbot.
 
 When receiving the start signal:
 - Leanbot will emit the countdown sound `3` – `2` – `1`
 - then starts the mission, do tasks
 
-### Syntax
+### Cú pháp
 ```
 LbMission.begin()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbMission.begin();
 ```
@@ -180,9 +180,9 @@ LbMission.begin();
 ---
 
 [[ Leanbot ]](#Leanbot)
-## LbMission.beginDigitalTwin 
+## LbMission.beginDigitalTwin
 
-### Description
+### Mô tả
 This function sends the mission name to the server, then Leanbot waits (blocking the program flow) for the signal to start the mission by one of the following:
 - Click the `Start` button on the Digital Twin web interface
 - Or simultaneously touch both `TB1A` and `TB1B` buttons on the front of Leanbot
@@ -191,24 +191,24 @@ When receiving the start signal:
 - Leanbot will emit the countdown sound `3` – `2` – `1`
 - then starts the mission, do tasks
 
-### Syntax
+### Cú pháp
 ```
 LbMission.beginDigitalTwin(F( missionId ))
 ```
 
-### Parameters
+### Biến số
 - `missionId`: the name of mission
   - Allowed data types: `string`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbMission.beginDigitalTwin(F( "ms11.1" ));
 ```
-See more:
-- [MissionDigitalTwin_ms1.1.ino](examples/LbMission/MissionDigitalTwin_ms1.1.ino)
+Tham khảo thêm:
+- [MissionDigitalTwin_ms1.1.ino](Ví dụs/LbMission/MissionDigitalTwin_ms1.1.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -217,30 +217,30 @@ See more:
 [[ Leanbot ]](#Leanbot)
 ## LbMission.end 
 
-### Description
+### Mô tả
 This function
 - Stop Leanbot, end of mission
 - Stop the program flow completely
 
-### Syntax
+### Cú pháp
 ```
 LbMission.end()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbMission.end();
 ```
-See more:
-- [MissionDigitalTwin_ms1.1.ino](examples/LbMission/MissionDigitalTwin_ms1.1.ino)
+Tham khảo thêm:
+- [MissionDigitalTwin_ms1.1.ino](Ví dụs/LbMission/MissionDigitalTwin_ms1.1.ino)
 
-### Notes and Warnings
+### Lưu ý
 Leanbot does not run any code after this function
 
 [🔼 Back to top](#leanbot-api-reference)
@@ -250,23 +250,23 @@ Leanbot does not run any code after this function
 [[ Leanbot ]](#Leanbot)
 ## LbMission.elapsedMillis
 
-### Description
-This function returns the elapsed time since Leanbot started the mission.
+### Mô tả
+This function Giá trị trả về the elapsed time since Leanbot started the mission.
 
-### Syntax
+### Cú pháp
 ```
 elapsedTimeMs = LbMission.elapsedMillis()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The elapsed time since Leanbot started the mission
 - Unit: ms
 - Data type: `long`
 
-### Example
+### Ví dụ
 ```
 long elapsedTimeMs = LbMission.elapsedMillis();
 ```
@@ -281,16 +281,16 @@ long elapsedTimeMs = LbMission.elapsedMillis();
 
 ## LbMotion.runLR
 
-### Description
+### Mô tả
 This function sets the speed and direction of rotation for the left and right wheels.
 The greater the speed, the faster the wheel rotates.
 
-### Syntax
+### Cú pháp
 ```
 LbMotion.runLR(vL, vR)
 ```
 
-### Parameters
+### Biến số
 - `vL`: left wheel velocity
 - `vR`: right wheel velocity
   - Unit: steps per second
@@ -299,16 +299,16 @@ LbMotion.runLR(vL, vR)
   - Negative value: rotate backward
   - Allowed data types: `int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
-This example makes Leanbot moves forward at speed of 400
+### Ví dụ
+This Ví dụ makes Leanbot moves forward at speed of 400
 ```
 LbMotion.runLR(400, 400);
 ```
-See more:
-- [runLR.ino](examples/LbMotion/runLR.ino)
+Tham khảo thêm:
+- [runLR.ino](Ví dụs/LbMotion/runLR.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -317,16 +317,16 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.runLRrpm
 
-### Description
+### Mô tả
 This function sets the speed (in revolutions per minute) and direction of rotation for the left and right wheels.
 The greater the number of revolutions per minute, the faster the wheel rotates.
 
-### Syntax
+### Cú pháp
 ```
 LbMotion.runLRrpm(rpmL, rpmR)
 ```
 
-### Parameters
+### Biến số
 - `rpmL`: left wheel velocity
 - `rpmR`: right wheel velocity
   - Unit: RPM - revolutions per minute
@@ -335,16 +335,16 @@ LbMotion.runLRrpm(rpmL, rpmR)
   - Negative value: rotate backward
   - Allowed data types: `int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
-This example makes Leanbot moves forward at 30 revolutions per minute
+### Ví dụ
+This Ví dụ makes Leanbot moves forward at 30 revolutions per minute
 ```
 LbMotion.runLRrpm(30, 30);
 ```
-See more:
-- [runLRrpm.ino](examples/LbMotion/runLRrpm.ino)
+Tham khảo thêm:
+- [runLRrpm.ino](Ví dụs/LbMotion/runLRrpm.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -353,27 +353,27 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.stopAndWait 
 
-### Description
+### Mô tả
 This function stops Leanbot and waits (blocking the program flow) until Leanbot has decelerated to a complete stop.
 
-### Syntax
+### Cú pháp
 ```
 LbMotion.stopAndWait()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 
 ```
 LbMotion.stopAndWait();
 ```
 
-### Notes and Warnings
+### Lưu ý
 The higher the speed the Leanbot is running, the longer it takes to stop. The distance traveled before stopping will also be longer.
 
 [🔼 Back to top](#leanbot-api-reference)
@@ -383,23 +383,23 @@ The higher the speed the Leanbot is running, the longer it takes to stop. The di
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.isStop
 
-### Description
+### Mô tả
 This function checks if Leanbot has stopped or not.
 
-### Syntax
+### Cú pháp
 ```
 isStop = LbMotion.isStop()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 - `true`: Leanbot has stopped
 - `false`: Leanbot is moving
 - Data type: `bool`
 
-### Example
+### Ví dụ
 ```
 bool isStop = LbMotion.isStop();
 ```
@@ -411,23 +411,23 @@ bool isStop = LbMotion.isStop();
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.isMoving
 
-### Description
+### Mô tả
 This function checks if Leanbot is moving or not.
 
-### Syntax
+### Cú pháp
 ```
 isStop = LbMotion.isMoving()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 - `true`: Leanbot is moving
 - `false`: Leanbot has stopped
 - Data type: `bool`
 
-### Example
+### Ví dụ
 ```
 bool isMoving = LbMotion.isMoving();
 ```
@@ -439,31 +439,31 @@ bool isMoving = LbMotion.isMoving();
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.waitDistance 
 
-### Description
+### Mô tả
 The program waits (blocking the program flow) in this function until Leanbot travels the desired distance in steps.
 Then process the next line of code.
 
-### Syntax
+### Cú pháp
 ```
 LbMotion.waitDistance(distanceStep)
 ```
 
-### Parameters
+### Biến số
 - `distanceStep`: the number of steps to wait for Leanbot to travel
   - Unit: steps
   - Allowed data types: `long`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 
 ```
 LbMotion.runLR(400, 400);       // let Leanbot move forward
 LbMotion.waitDistance(1500);    // wait for Leanbot to advance 1500 steps
 ```
-See more:
-- [waitDistance.ino](examples/LbMotion/waitDistance.ino)
+Tham khảo thêm:
+- [waitDistance.ino](Ví dụs/LbMotion/waitDistance.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -472,31 +472,31 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.waitDistanceMm 
 
-### Description
+### Mô tả
 The program waits (blocking the program flow) until Leanbot has moved by (approximately) distance in millimeters.
 Then process the next line of code.
 
-### Syntax
+### Cú pháp
 ```
 LbMotion.waitDistanceMm(distanceMm)
 ```
 
-### Parameters
+### Biến số
 - `distanceMm`: the distance in millimeters to travel
   - Unit: mm
   - Allowed data types: `int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 
 ```
 LbMotion.runLR(400, 400);       // let Leanbot move forward
 LbMotion.delayDistanceMm(150);  // wait for Leanbot to advance 150mm = 15cm
 ```
-See more:
-- [waitDistanceMm.ino](examples/LbMotion/waitDistanceMm.ino)
+Tham khảo thêm:
+- [waitDistanceMm.ino](Ví dụs/LbMotion/waitDistanceMm.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -505,36 +505,36 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.waitRotation 
 
-### Description
+### Mô tả
 The program waits (blocking the program flow) until Leanbot has rotated by (approximately) the desired steps.
 Then process the next line of code.
 
-### Syntax
+### Cú pháp
 ```
 LbMotion.waitRotation(rotationStep)
 ```
 
-### Parameters
+### Biến số
 - `rotationStep`: the number of differential steps to wait for Leanbot to rotate
   - Unit: steps
   - Allowed data types: `long`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 
 ```
 LbMotion.runLR(+400, -400);      // let Leanbot rotate
 LbMotion.waitRotation(1500);     // wait for rotating 1500 steps
 ```
-See more:
-- [waitRotation.ino](examples/LbMotion/waitRotation.ino)
+Tham khảo thêm:
+- [waitRotation.ino](Ví dụs/LbMotion/waitRotation.ino)
 
-### Notes and Warnings
+### Lưu ý
 Experiment and rotation adjustment are required to find the step value corresponding to the desired rotation angle
 - The step value will be different for each Leanbot, speed and moving surface
-- For example: with speed 500 and rotation value is 1750, Leanbot will rotate an angle of approximately 90°
+- For Ví dụ: with speed 500 and rotation value is 1750, Leanbot will rotate an angle of approximately 90°
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -543,24 +543,24 @@ Experiment and rotation adjustment are required to find the step value correspon
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.waitRotationDeg 
 
-### Description
+### Mô tả
 The program waits (blocking the program flow) until Leanbot has rotated by (approximately) the desired degrees.
 Then process the next line of code.
 
-### Syntax
+### Cú pháp
 ```
 LbMotion.waitRotationDeg(rotationDeg)
 ```
 
-### Parameters
+### Biến số
 - `rotationDeg`: the angle to wait for Leanbot to rotate
   - Unit: degree (angle)
   - Allowed data types: `int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbMotion.runLR(+500, -500);        // let Leanbot rotate right
 LbMotion.waitRotationDeg(180);     // wait for Leanbot to rotate approximately 180°
@@ -573,23 +573,23 @@ LbMotion.waitRotationDeg(180);     // wait for Leanbot to rotate approximately 1
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.getDistance
 
-### Description
-This function returns the distance in number of steps which Leanbot has traveled from origin
+### Mô tả
+This function Giá trị trả về the distance in number of steps which Leanbot has traveled from origin
 
-### Syntax
+### Cú pháp
 ```
 long distance = LbMotion.getDistance()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The traveled distance in number of steps
 - Unit: steps
 - Data type: `long`
 
-### Example
+### Ví dụ
 ```
 long distance = LbMotion.getDistance();
 ```
@@ -601,23 +601,23 @@ long distance = LbMotion.getDistance();
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.getDistanceMm
 
-### Description
-This function returns the distance in millimeters which Leanbot has traveled from origin
+### Mô tả
+This function Giá trị trả về the distance in millimeters which Leanbot has traveled from origin
 
-### Syntax
+### Cú pháp
 ```
 long distance = LbMotion.getDistanceMm()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The traveled distance in millimeters
 - Unit: mm
 - Data type: `long`
 
-### Example
+### Ví dụ
 ```
 long distanceMm = LbMotion.getDistanceMm();
 ```
@@ -629,23 +629,23 @@ long distanceMm = LbMotion.getDistanceMm();
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.getRotation
 
-### Description
-This function returns the angle in number of steps which Leanbot has rotated from origin
+### Mô tả
+This function Giá trị trả về the angle in number of steps which Leanbot has rotated from origin
 
-### Syntax
+### Cú pháp
 ```
 long rotation = LbMotion.getRotation()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The rorated angle in number of steps
 - Unit: steps
 - Data type: `long`
 
-### Example
+### Ví dụ
 ```
 long rotation = LbMotion.getRotation();
 ```
@@ -657,23 +657,23 @@ long rotation = LbMotion.getRotation();
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 ## LbMotion.getRotationDeg
 
-### Description
-This function returns the angle in degrees which Leanbot has rotated from origin
+### Mô tả
+This function Giá trị trả về the angle in degrees which Leanbot has rotated from origin
 
-### Syntax
+### Cú pháp
 ```
 long rotationDegree = LbMotion.getRotationDeg()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The rorated angle in degrees
 - Unit: degree (angle)
 - Data type: `long`
 
-### Example
+### Ví dụ
 ```
 long rotationDegree = LbMotion.getRotationDeg();
 ```
@@ -687,26 +687,26 @@ long rotationDegree = LbMotion.getRotationDeg();
 
 ## LbGripper.open 
 
-### Description
+### Mô tả
 This function moves gripper arms to open position (both arms at 0 degree position - perpendicular to the surface)
 
-### Syntax
+### Cú pháp
 ```
 LbGripper.open()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbGripper.open();
 ```
-See more:
-- [GripperOpenClose.ino](examples/LbGripper/GripperOpenClose.ino)
+Tham khảo thêm:
+- [GripperOpenClose.ino](Ví dụs/LbGripper/GripperOpenClose.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -715,27 +715,27 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
 ## LbGripper.close 
 
-### Description
+### Mô tả
 This function moves gripper arms to close position (both arms at 90 degree position - parallel to the surface)
 
 
-### Syntax
+### Cú pháp
 ```
 LbGripper.close()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbGripper.close();
 ```
-See more:
-- [GripperOpenClose.ino](examples/LbGripper/GripperOpenClose.ino)
+Tham khảo thêm:
+- [GripperOpenClose.ino](Ví dụs/LbGripper/GripperOpenClose.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -744,30 +744,30 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
 ## LbGripper.moveTo 
 
-### Description
+### Mô tả
 This function moves both gripper arms to the same desired angle.
 
-### Syntax
+### Cú pháp
 ```
 LbGripper.moveTo(toAngle)
 ```
 
-### Parameters
+### Biến số
 - `toAngle`: the degree to move to
   - Unit: degree (angle)
   - Range: [-30, +120]
   - Allowed data types: `int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
-The example moves both the gripper arms to the position 45°
+### Ví dụ
+The Ví dụ moves both the gripper arms to the position 45°
 ```
 LbGripper.moveTo(45);
 ```
-See more:
-- [GripperMoveTo.ino](examples/LbGripper/GripperMoveTo.ino)
+Tham khảo thêm:
+- [GripperMoveTo.ino](Ví dụs/LbGripper/GripperMoveTo.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -776,15 +776,15 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
 ## LbGripper.moveToLR 
 
-### Description
+### Mô tả
 This function moves both gripper arms to their desired angles for a desired amount of time (blocking the program flow).
 
-### Syntax
+### Cú pháp
 ```
 LbGripper.moveToLR(toAngleL, toAngleR, timeMs)
 ```
 
-### Parameters
+### Biến số
 - `toAngleL`: the degree for left gripper arm to move to
 - `toAngleR`: the degree for right gripper arm to move to
   - Unit: degree (angle)
@@ -794,16 +794,16 @@ LbGripper.moveToLR(toAngleL, toAngleR, timeMs)
 - `timeMs`: the time in milliseconds to move both grippers to the target angles
   - Allowed data types: `int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
-The example moves the left gripper to position 30° and the right gripper to position 60° for 1.5 seconds
+### Ví dụ
+The Ví dụ moves the left gripper to position 30° and the right gripper to position 60° for 1.5 seconds
 ```
 LbGripper.moveToLR(30, 60, 1500);
 ```
-See more:
-- [GripperMoveToLR.ino](examples/LbGripper/GripperMoveToLR.ino)
+Tham khảo thêm:
+- [GripperMoveToLR.ino](Ví dụs/LbGripper/GripperMoveToLR.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -812,24 +812,24 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
 ## LbGripper.readL
 
-### Description
-This function returns the current angle (in degrees) of the left gripper arm.
+### Mô tả
+This function Giá trị trả về the current angle (in degrees) of the left gripper arm.
 
-### Syntax
+### Cú pháp
 ```
 LbGripper.readL()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The current angle (in degrees) of the left gripper arm
 - Unit: degree (angle)
 - Range: [-30, +120]
 - Data type: `int`
 
-### Example
+### Ví dụ
 ```
 int angleL = LbGripper.readL();
 ```
@@ -841,24 +841,24 @@ int angleL = LbGripper.readL();
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
 ## LbGripper.readR
 
-### Description
-This function returns the current angle (in degrees) of the right gripper arm.
+### Mô tả
+This function Giá trị trả về the current angle (in degrees) of the right gripper arm.
 
-### Syntax
+### Cú pháp
 ```
 LbGripper.readR()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The current angle (in degrees) of the right gripper arm
 - Unit: degree (angle)
 - Range: [-30, +120]
 - Data type: `int`
 
-### Example
+### Ví dụ
 ```
 int angleR = LbGripper.readR();
 ```
@@ -871,17 +871,17 @@ int angleR = LbGripper.readR();
 
 ## Leanbot.tone
 
-### Description
+### Mô tả
 This function plays sounds with the specified frequency in a duration of time.
 - While playing the sound, Leanbot continues to process the next line of code
 - The sound will automatically stop after the duration, or call the [Leanbot.noTone](#Leanbot.noTone) function
 
-### Syntax
+### Cú pháp
 ```
 Leanbot.tone(frequency, duration)
 ```
 
-### Parameters
+### Biến số
 - frequency: the frequency of the tone in Herzt (Hz)
   - Unit: Herzt (Hz)
   - Allowed data types: `unsigned int`
@@ -890,19 +890,19 @@ Leanbot.tone(frequency, duration)
   - Unit: ms
   - Allowed data types: `unsigned int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 Play sound with frequency 1000 Hz for 1.5 s
 ```
 Leanbot.tone(1000, 1500);
 ```
-See more:
-- [tone.ino](examples/Buzzer/tone.ino)
-- [toneDuration.ino](examples/Buzzer/toneDuration.ino)
+Tham khảo thêm:
+- [tone.ino](Ví dụs/Buzzer/tone.ino)
+- [toneDuration.ino](Ví dụs/Buzzer/toneDuration.ino)
 
-### Notes and Warnings
+### Lưu ý
 This function is non-blocking, which means that even if you provide the duration parameter
 the sketch execution will continue immediately even if the tone hasn't finished playing.
 
@@ -913,26 +913,26 @@ the sketch execution will continue immediately even if the tone hasn't finished 
 [[ Leanbot ]](#Leanbot) / [[ Buzzer  ]](#Buzzer)
 ## Leanbot.noTone
 
-### Description
+### Mô tả
 This function stops the sound played by [Leanbot.tone](#Leanbot.tone)
 
-### Syntax
+### Cú pháp
 ```
 Leanbot.noTone()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 Leanbot.noTone();
 ```
-See more:
-- [noTone.ino](examples/Buzzer/noTone.ino)
+Tham khảo thêm:
+- [noTone.ino](Ví dụs/Buzzer/noTone.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -943,46 +943,46 @@ See more:
 - Leanbot has 7 RGB Leds: `ledA`, `ledB`, `ledC`, `ledD`, `ledE`, `ledF` and `ledO`
 
 ## RGB color code
-There are 3 different syntax to represent a RGB color:
+There are 3 different Cú pháp to represent a RGB color:
 1. Color name: `CRGB::ColorName`
-  - Example: `CRGB::Red`, `CRGB::Green`, `CRGB::Blue`
-  - See more: [https://github.com/FastLED/FastLED/wiki/Pixel-reference#predefined-colors-list](https://github.com/FastLED/FastLED/wiki/Pixel-reference#predefined-colors-list)
+  - Ví dụ: `CRGB::Red`, `CRGB::Green`, `CRGB::Blue`
+  - Tham khảo thêm: [https://github.com/FastLED/FastLED/wiki/Pixel-reference#predefined-colors-list](https://github.com/FastLED/FastLED/wiki/Pixel-reference#predefined-colors-list)
 
 2. Decimal code: `CRGB(red, green, blue)`
   - Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255
-  - Example:
+  - Ví dụ:
     - `CRGB(255, 0, 0)` is red, because red is set to highest value (255), and the other two (green and blue) are set to 0
     - `CRGB(0, 255, 0)` is green, because green is set to highest value (255), and the other two (red and blue) are set to 0
-    - To display black, set all parameters to 0: `CRGB(0, 0, 0)`
-    - To display white, set all parameters to 255: `CRGB(255, 255, 255)`
-  - See more: [https://www.w3schools.com/colors/colors_picker.asp](https://www.w3schools.com/colors/colors_picker.asp)
+    - To display black, set all Biến số to 0: `CRGB(0, 0, 0)`
+    - To display white, set all Biến số to 255: `CRGB(255, 255, 255)`
+  - Tham khảo thêm: [https://www.w3schools.com/colors/colors_picker.asp](https://www.w3schools.com/colors/colors_picker.asp)
 
 3. Hex code: `0xRRGGBB`
   - Concatenate the 3 hex values of the red, green and blue together
-  - Example: `0xFF0000` (red), `0x00FF00` (green), `0x0000FF` (blue)
+  - Ví dụ: `0xFF0000` (red), `0x00FF00` (green), `0x0000FF` (blue)
 
 ## LbRGB.show
 
-### Description
+### Mô tả
 This function shows all Leds to diplay.
 
-### Syntax
+### Cú pháp
 ```
 LbRGB.show()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbRGB.show();
 ```
 
-### Notes and Warnings
+### Lưu ý
 This function must be called after updating the color of the Leds.
 
 [🔼 Back to top](#leanbot-api-reference)
@@ -992,21 +992,21 @@ This function must be called after updating the color of the Leds.
 [[ Leanbot ]](#Leanbot) / [[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB.clear
 
-### Description
+### Mô tả
 This function clears all Leds to black.
 
-### Syntax
+### Cú pháp
 ```
 LbRGB.clear()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbRGB.clear();
 ```
@@ -1018,32 +1018,32 @@ LbRGB.clear();
 [[ Leanbot ]](#Leanbot) / [[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB[ ]
 
-### Description
+### Mô tả
 This function sets a led to the given RGB color.
 
-### Syntax
+### Cú pháp
 ```
 LbRGB[ledX] = color
 ```
 
-### Parameters
+### Biến số
 - `ledX`: the led to be set
 - `color`: the [RGB color code](#RGB-color-code)
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbRGB[ledA] = CRGB::Red;              // set `ledA` to red
 LbRGB[ledO] = CRGB(0, 255, 0);        // set `ledO` to green
 LbRGB[ledD] = 0x0000FF;               // set `ledD` to blue
 LbRGB.show();                         // show all Leds to diplay
 ```
-See more:
-- [setColor.ino](examples/LbRGB/setColor.ino)
+Tham khảo thêm:
+- [setColor.ino](Ví dụs/LbRGB/setColor.ino)
 
-### Notes and Warnings
+### Lưu ý
 This function only updates the color value of a led
 - You have to call [LbRGB.show](#LbRGB.show) to make the leds actually show the new colors
 
@@ -1054,32 +1054,32 @@ This function only updates the color value of a led
 [[ Leanbot ]](#Leanbot) / [[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB.fillColor
 
-### Description
+### Mô tả
 This function fills a shape (set of Leds) with a given RGB color.
 
-### Syntax
+### Cú pháp
 ```
 LbRGB.fillColor(color, shape)
 ```
 
-### Parameters
+### Biến số
 - `color`: the [RGB color code](#RGB-color-code)
 
 - `shape`: a set of Leds to be set
   - Allowed data types: `byte`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
-The example sets the 4 Leds A, B, C and D (a smiley shape) to green
+### Ví dụ
+The Ví dụ sets the 4 Leds A, B, C and D (a smiley shape) to green
 ```
 byte LbSmiley = BITMAP(ledA, ledB, ledC, ledD);   // create smiley shape
 LbRGB.fillColor(CRGB::Green, LbSmiley);           // fill green color
 LbRGB.show();                                     // show all Leds to diplay
 ```
-See more:
-- [fillColor.ino](examples/LbRGB/fillColor.ino)
+Tham khảo thêm:
+- [fillColor.ino](Ví dụs/LbRGB/fillColor.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -1091,38 +1091,38 @@ See more:
 
 ## LbTouch.read
 
-### Description
+### Mô tả
 This function reads the state of the specified touch sensors.
 
-### Syntax
+### Cú pháp
 ```
 value = LbTouch.read(tbX)
 ```
 
-### Parameters
+### Biến số
 `tbX`: the touch sensor to read. Valid choices are:
 - TB1A
 - TB1B
 - TB2A
 - TB2B
 
-### Returns
+### Giá trị trả về
 The state the touch sensor
 - Value `0`: the sensor is being released
 - Value `1`: the sensor is being touched
 - Data type: `byte`
 
-### Example
-The example reads the state of the sensors `TB1A` and `TB2A`
+### Ví dụ
+The Ví dụ reads the state of the sensors `TB1A` and `TB2A`
 ```
 byte value1A = LbTouch.read(TB1A);
 byte value2A = LbTouch.read(TB2A);
 ```
-See more:
-- [ledControl.ino](examples/LbTouch/ledControl.ino)
-- [wheelControl.ino](examples/LbTouch/wheelControl.ino)
+Tham khảo thêm:
+- [ledControl.ino](Ví dụs/LbTouch/ledControl.ino)
+- [wheelControl.ino](Ví dụs/LbTouch/wheelControl.ino)
 
-### Notes and Warnings
+### Lưu ý
 Multiple sensors can be combined and read at once time.
 ```
 LbTouch.read(TB1A | TB1B)
@@ -1135,29 +1135,29 @@ LbTouch.read(TB1A | TB1B)
 [[ Leanbot ]](#Leanbot) / [[ Touch Sensors ]](#Touch-Sensors)
 ## LbTouch.readBits
 
-### Description
+### Mô tả
 This function reads the state of all 4 touch sensors.
 
-### Syntax
+### Cú pháp
 ```
 touchBits = LbTouch.readBits()
 ```
 
-### Parameters
+### Biến số
 - None
 
-### Returns
+### Giá trị trả về
 The binary state of 4 touch sensors
 - Value `0`: the sensor is being released
 - Value `1`: the sensor is being touched
 - Data type: `byte`
 
-### Example
+### Ví dụ
 ```
 byte touchBits = LbTouch.readBits();
 ```
-See more:
-- [readBits.ino](examples/LbTouch/readBits.ino)
+Tham khảo thêm:
+- [readBits.ino](Ví dụs/LbTouch/readBits.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -1166,32 +1166,32 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ Touch Sensors ]](#Touch-Sensors)
 ## LbTouch.onPress
 
-### Description
+### Mô tả
 This function reads the touching event of the specified touch sensors.
 
-### Syntax
+### Cú pháp
 ```
 isOnPress = LbTouch.onPress(tbX)
 ```
 
-### Parameters
+### Biến số
 - `tbX`: the touch sensor to read
 
-### Returns
+### Giá trị trả về
 The touching event the touch sensor
 - Value `true`: the sensor has NOT just been touched, either released or being held
 - Value `false`: the sensor has just been touched
 - Data type: `bool`
 
-### Example
-The example reads the touching state of the sensor `TB1A`
+### Ví dụ
+The Ví dụ reads the touching state of the sensor `TB1A`
 ```
 bool value1A = LbTouch.onPress(TB1A);
 ```
-See more:
-- [onPress.ino](examples/LbTouch/onPress.ino)
+Tham khảo thêm:
+- [onPress.ino](Ví dụs/LbTouch/onPress.ino)
 
-### Notes and Warnings
+### Lưu ý
 Multiple sensors can be combined and read at once time.
 ```
 LbTouch.onPress(TB1A | TB1B)
@@ -1203,37 +1203,37 @@ LbTouch.onPress(TB1A | TB1B)
 
 # Ultrasonic Sensor
 
-### Notes and Warnings
+### Lưu ý
 The ultrasonic sensor can be triggered as fast as every 50 ms, or 20 times each second
 - You should wait 50 ms before the next ping
 - This is to ensure the ultrasonic __beep__ has faded away and will not cause a false echo on the next ranging
 
 ## Leanbot.pingCm
 
-### Description
-This function sends a ping and returns the front distance measured in centimeters.
+### Mô tả
+This function sends a ping and Giá trị trả về the front distance measured in centimeters.
 
-### Syntax
+### Cú pháp
 ```
 distanceCm = Leanbot.pingCm()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The front distance measured in centimeters
 - Unit: cm
 - Data type: `unsigned int`
 
-### Example
+### Ví dụ
 ```
 unsigned int distanceCm = Leanbot.pingCm();
 ```
-See more:
-- [pingCm.ino](examples/Ping/pingCm.ino)
+Tham khảo thêm:
+- [pingCm.ino](Ví dụs/Ping/pingCm.ino)
 
-### Notes and Warnings
+### Lưu ý
 The maximum sensor distance is 300 cm, outside this distance, the function will return 1,000 cm.
 
 [🔼 Back to top](#leanbot-api-reference)
@@ -1243,28 +1243,28 @@ The maximum sensor distance is 300 cm, outside this distance, the function will 
 [[ Leanbot ]](#Leanbot) / [[ Ultrasonic Sensor ]](#Ultrasonic-Sensor)
 ## Leanbot.pingMm
 
-### Description
-This function sends a ping and returns the front distance measured in millimeters.
+### Mô tả
+This function sends a ping and Giá trị trả về the front distance measured in millimeters.
 
-### Syntax
+### Cú pháp
 ```
 distanceMm = Leanbot.pingMm()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The front distance measured in centimeters
 - Unit: mm
 - Data type: `unsigned int`
 
-### Example
+### Ví dụ
 ```
 unsigned int distanceMm = Leanbot.pingMm();
 ```
 
-### Notes and Warnings
+### Lưu ý
 The maximum sensor distance is `3,000 mm`, outside this distance, the function will return `10,000 mm`
 
 [🔼 Back to top](#leanbot-api-reference)
@@ -1284,30 +1284,30 @@ The maximum sensor distance is `3,000 mm`, outside this distance, the function w
 
 ## LbIRLine.read
 
-### Description
+### Mô tả
 This function reads the value of 4 bar sensors. Used to check the position of the black line relative to Leanbot.
 
-### Syntax
+### Cú pháp
 ```
 lineState = LbIRLine.read()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The binary state of 4 bar sensors
 - Value `0`: the sensor is on the white surface
 - Value `1`: the sensor is on the black line
 - Data type: `byte`
 
-### Example
+### Ví dụ
 ```
 byte lineState = LbIRLine.read();
 ```
-See more:
-- [readLineState.ino](examples/LbIRLine/readLineState.ino)
-- [followLine.ino](examples/LbIRLine/followLine.ino)
+Tham khảo thêm:
+- [readLineState.ino](Ví dụs/LbIRLine/readLineState.ino)
+- [followLine.ino](Ví dụs/LbIRLine/followLine.ino)
 
 [🔼 Back to top](#leanbot-api-reference)
 &nbsp;
@@ -1316,22 +1316,22 @@ See more:
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.value
 
-### Description
-This function returns the value of 4 bar sensors which are read before.
+### Mô tả
+This function Giá trị trả về the value of 4 bar sensors which are read before.
 
-### Syntax
+### Cú pháp
 ```
 LbIRLine.value()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 The 4 line sensors value
 - Data type: `byte`
 
-### Example
+### Ví dụ
 ```
 byte lineValue = LbIRLine.value();
 ```
@@ -1343,21 +1343,21 @@ byte lineValue = LbIRLine.value();
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.print
 
-### Description
+### Mô tả
 This function sends the value of the 4 bar sensors (which are read before) to the computer.
 
-### Syntax
+### Cú pháp
 ```
 LbIRLine.print()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbIRLine.print();
 ```
@@ -1369,22 +1369,22 @@ LbIRLine.print();
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.displayOnRGB
 
-### Description
+### Mô tả
 This function displays the 4 bar sensors result on RGB Leds with color.
 - If any sensor is on the black line, the corresponding RGB Led will light up
 
-### Syntax
+### Cú pháp
 ```
 LbIRLine.displayOnRGB(color)
 ```
 
-### Parameters
+### Biến số
 - `color`: the [RGB color code](#RGB-color-code)
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbIRLine.read();                     // update line state
 LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
@@ -1397,24 +1397,24 @@ LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.isBlackDetected
 
-### Description
+### Mô tả
 This function checks whether one of the 4 bar sensors is on the black line.
 
-### Syntax
+### Cú pháp
 ```
 LbIRLine.isBlackDetected()
 ```
 
-### Parameters
+### Biến số
 None
 
-### Returns
+### Giá trị trả về
 - `true` : the bars sensor is on the black line
 - `false`: the bars sensor is NOT on the black line
 - Data type: `bool`
 
-### Example
-The example lets Leanbot moving forward until the end of the black line
+### Ví dụ
+The Ví dụ lets Leanbot moving forward until the end of the black line
 ```
 LbMotion.runLR(400, 400);                // move forward
 while ( LbIRLine.isBlackDetected() );    // keep moving as long as Leanbot can see the black line
@@ -1428,30 +1428,30 @@ LbMotion.stopAndWait();                  // stop
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.doManualCalibration 
 
-### Description
+### Mô tả
 This function does 3-step light level calibration with touch button.
 
-### Syntax
+### Cú pháp
 ```
 LbIRLine.doManualCalibration(tbX)
 ```
 
-### Parameters
+### Biến số
 - `tbX`: the touch sensor used to perform black/white sampling
   - Leanbot has 4 touch sensors: `TB1A`, `TB1B`, `TB2A` and `TB2A`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 ```
 LbIRLine.doManualCalibration(TB1A);
 ```
-See more:
-- [lineCalibration.ino](examples/LbIRLine/lineCalibration.ino)
-- [calibrationThenFollowLine.ino](examples/LbIRLine/calibrationThenFollowLine.ino)
+Tham khảo thêm:
+- [lineCalibration.ino](Ví dụs/LbIRLine/lineCalibration.ino)
+- [calibrationThenFollowLine.ino](Ví dụs/LbIRLine/calibrationThenFollowLine.ino)
 
-### Notes and Warnings
+### Lưu ý
 It is recommended to perform this step before starting the mission or when there are changes in ambient light or moving surface.
 
 [🔼 Back to top](#leanbot-api-reference)
@@ -1460,24 +1460,24 @@ It is recommended to perform this step before starting the mission or when there
 
 ## LbIRArray.read
 
-### Description
+### Mô tả
 This function reads the value of the specified sensor.
 The darker the surface, the higher the sensor value.
 
-### Syntax
+### Cú pháp
 ```
 LbIRArray.read(irX)
 ```
 
-### Parameters
+### Biến số
 - `irX`: the sensor to read
 
-### Returns
+### Giá trị trả về
 The sensor value: 0 - 768
 - Data type: `int`
 
-### Example
-The example reads the value of sensor `ir0L` and sends the result to the computer
+### Ví dụ
+The Ví dụ reads the value of sensor `ir0L` and sends the result to the computer
 ```
 int value = LbIRArray.read(ir0L);    // read the sensor value
 Serial.println(value);               // transfer the results to the computer
@@ -1491,16 +1491,16 @@ Serial.println(value);               // transfer the results to the computer
 
 ## Leanbot.DCMotor.setPower
 
-### Description
+### Mô tả
 This function makes the motor rotates at a desired speed in the forward or backward direction.
 The greater the power, the faster the motor rotates.
 
-### Syntax
+### Cú pháp
 ```
 Leanbot.DCMotor.setPower(power)
 ```
 
-### Parameters
+### Biến số
 - `power`: the power level
   - Range: [-255, +255]
   - Positive integer: turn forward
@@ -1508,18 +1508,18 @@ Leanbot.DCMotor.setPower(power)
   - 0: turn off
   - Allowed data types: `int`
 
-### Returns
+### Giá trị trả về
 None
 
-### Example
+### Ví dụ
 The code makes the motor rotates forward at power level of 250
 ```
 Leanbot.DCMotor.setPower(250);
 ```
-See more:
-- [setPower.ino](examples/DCMotor/setPower.ino)
+Tham khảo thêm:
+- [setPower.ino](Ví dụs/DCMotor/setPower.ino)
 
-### Notes and Warnings
+### Lưu ý
 Values out of range will be constrained between -255 and +255
 
 [🔼 Back to top](#leanbot-api-reference)
