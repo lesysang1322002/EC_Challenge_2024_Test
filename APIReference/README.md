@@ -1,4 +1,4 @@
-Các-hàm-điều-khiển-Leanbot
+Các hàm điều khiển Leanbot
 ---
 
 [Arduino basic reference](https://www.arduino.cc/reference/en/)
