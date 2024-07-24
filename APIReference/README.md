@@ -86,10 +86,10 @@ Leanbot.begin()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -126,7 +126,7 @@ LbDelay(timeMs)
   - Kiểu dữ liệu: `unsigned int`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 Ví dụ cho Leanbot đi thẳng với vận tốc 400 trong 3 giây, rồi dừng lại
@@ -149,8 +149,8 @@ Thời gian trễ cao nhất là `65,535` mili giây (≈ 65.5 giây)
 ## LbMotion.runLR
 
 ### Mô tả
-This function sets the speed and direction of rotation for the left and right wheels.
-The greater the speed, the faster the wheel rotates.
+Hàm này đặt tốc độ và hướng quay cho bánh trái và bánh phải.
+Tốc độ càng lớn, bánh xe quay càng nhanh.
 
 ### Cú pháp
 ```
@@ -158,23 +158,24 @@ LbMotion.runLR(vL, vR)
 ```
 
 ### Tham số
-- `vL`: left wheel velocity
-- `vR`: right wheel velocity
-  - Unit: steps per second
-  - Range: [-2000, +2000]
-  - Positive value: rotate forward
-  - Negative value: rotate backward
-  - Allowed data types: `int`
+- `vL`: tốc độ bánh trái
+- `vR`: tốc độ bánh phải
+  - Đơn vị: bước mỗi giây
+  - Phạm vi: [-2000, +2000]
+  - Giá trị dương: quay tiến
+  - Giá trị âm: quay lùi
+  - Các loại dữ liệu cho phép: `int`
 
 ### Giá trị trả về
-Không
+Không có có
 
 ### Ví dụ
-This Ví dụ makes Leanbot moves forward at speed of 400
+Ví dụ này làm cho Leanbot di chuyển tiến với tốc độ 400
+
 ```
 LbMotion.runLR(400, 400);
 ```
-See more:
+Xem thêm:
 - [runLR.ino](Ví dụs/LbMotion/runLR.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
@@ -185,32 +186,33 @@ See more:
 ## LbMotion.runLRrpm
 
 ### Mô tả
-This function sets the speed (in revolutions per minute) and direction of rotation for the left and right wheels.
-The greater the number of revolutions per minute, the faster the wheel rotates.
+Hàm này đặt tốc độ (vòng quay mỗi phút) và hướng quay cho bánh trái và bánh phải.
+Số vòng quay mỗi phút càng lớn, bánh xe quay càng nhanh.
 
 ### Cú pháp
 ```
 LbMotion.runLRrpm(rpmL, rpmR)
 ```
 
+
 ### Tham số
-- `rpmL`: left wheel velocity
-- `rpmR`: right wheel velocity
-  - Unit: RPM - revolutions per minute
-  - Range: [-60, +60]
-  - Positive value: rotate forward
-  - Negative value: rotate backward
-  - Allowed data types: `int`
+- `rpmL`: tốc độ bánh trái
+- `rpmR`: tốc độ bánh phải
+  - Đơn vị: RPM - vòng quay mỗi phút
+  - Phạm vi: [-60, +60]
+  - Giá trị dương: quay tiến
+  - Giá trị âm: quay lùi
+  - Các loại dữ liệu cho phép: `int`
 
 ### Giá trị trả về
-Không
+Không có có
 
 ### Ví dụ
-This Ví dụ makes Leanbot moves forward at 30 revolutions per minute
+Ví dụ này làm cho Leanbot di chuyển tiến với tốc độ 30 vòng mỗi phút
 ```
 LbMotion.runLRrpm(30, 30);
 ```
-See more:
+Xem thêm:
 - [runLRrpm.ino](Ví dụs/LbMotion/runLRrpm.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
@@ -221,7 +223,7 @@ See more:
 ## LbMotion.stopAndWait 
 
 ### Mô tả
-This function stops Leanbot and waits (blocking the program flow) until Leanbot has decelerated to a complete stop.
+Hàm này dừng Leanbot và đợi (chặn luồng chương trình) cho đến khi Leanbot giảm tốc hoàn toàn và dừng hẳn.
 
 ### Cú pháp
 ```
@@ -229,10 +231,10 @@ LbMotion.stopAndWait()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 
@@ -240,26 +242,27 @@ Không
 LbMotion.stopAndWait();
 ```
 
-### Chú ý
-The higher the speed the Leanbot is running, the longer it takes to stop. The distance traveled before stopping will also be longer.
+Xem thêm:
+- [runLRrpm.ino](Ví dụs/LbMotion/runLRrpm.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.isStop
+## LbMotion.stopAndWait 
 
 ### Mô tả
-This function checks if Leanbot has stopped or not.
+Hàm này dừng Leanbot và đợi (chặn luồng chương trình) cho đến khi Leanbot giảm tốc hoàn toàn và dừng hẳn.
 
 ### Cú pháp
+
 ```
 isStop = LbMotion.isStop()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 - `true`: Leanbot has stopped
@@ -287,7 +290,7 @@ isStop = LbMotion.isMoving()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 - `true`: Leanbot is moving
@@ -321,7 +324,7 @@ LbMotion.waitDistance(distanceStep)
   - Allowed data types: `long`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 
@@ -354,7 +357,7 @@ LbMotion.waitDistanceMm(distanceMm)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 
@@ -387,7 +390,7 @@ LbMotion.waitRotation(rotationStep)
   - Allowed data types: `long`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 
@@ -425,7 +428,7 @@ LbMotion.waitRotationDeg(rotationDeg)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -449,7 +452,7 @@ long distance = LbMotion.getDistance()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The traveled distance in number of steps
@@ -477,7 +480,7 @@ long distance = LbMotion.getDistanceMm()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The traveled distance in millimeters
@@ -505,7 +508,7 @@ long rotation = LbMotion.getRotation()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The rorated angle in number of steps
@@ -533,7 +536,7 @@ long rotationDegree = LbMotion.getRotationDeg()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The rorated angle in degrees
@@ -563,10 +566,10 @@ LbGripper.open()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -592,10 +595,10 @@ LbGripper.close()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -626,7 +629,7 @@ LbGripper.moveTo(toAngle)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 The Ví dụ moves both the gripper arms to the position 45°
@@ -662,7 +665,7 @@ LbGripper.moveToLR(toAngleL, toAngleR, timeMs)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 The Ví dụ moves the left gripper to position 30° and the right gripper to position 60° for 1.5 seconds
@@ -688,7 +691,7 @@ LbGripper.readL()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The current angle (in degrees) of the left gripper arm
@@ -717,7 +720,7 @@ LbGripper.readR()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The current angle (in degrees) of the right gripper arm
@@ -758,7 +761,7 @@ Leanbot.tone(frequency, duration)
   - Allowed data types: `unsigned int`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 Play sound with frequency 1000 Hz for 1.5 s
@@ -789,10 +792,10 @@ Leanbot.noTone()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -839,10 +842,10 @@ LbRGB.show()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -868,10 +871,10 @@ LbRGB.clear()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -898,7 +901,7 @@ LbRGB[ledX] = color
 - `color`: the [RGB color code](#RGB-color-code)
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -936,7 +939,7 @@ LbRGB.fillColor(color, shape)
   - Allowed data types: `byte`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 The Ví dụ sets the 4 Leds A, B, C and D (a smiley shape) to green
@@ -1011,7 +1014,7 @@ touchBits = LbTouch.readBits()
 ```
 
 ### Tham số
-- Không
+- Không có
 
 ### Giá trị trả về
 The binary state of 4 touch sensors
@@ -1086,7 +1089,7 @@ distanceCm = Leanbot.pingCm()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The front distance measured in centimeters
@@ -1119,7 +1122,7 @@ distanceMm = Leanbot.pingMm()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The front distance measured in centimeters
@@ -1160,7 +1163,7 @@ lineState = LbIRLine.read()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The binary state of 4 bar sensors
@@ -1192,7 +1195,7 @@ LbIRLine.value()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 The 4 line sensors value
@@ -1219,10 +1222,10 @@ LbIRLine.print()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -1249,7 +1252,7 @@ LbIRLine.displayOnRGB(color)
 - `color`: the [RGB color code](#RGB-color-code)
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -1273,7 +1276,7 @@ LbIRLine.isBlackDetected()
 ```
 
 ### Tham số
-Không
+Không có
 
 ### Giá trị trả về
 - `true` : the bars sensor is on the black line
@@ -1308,7 +1311,7 @@ LbIRLine.doManualCalibration(tbX)
   - Leanbot has 4 touch sensors: `TB1A`, `TB1B`, `TB2A` and `TB2A`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 ```
@@ -1376,7 +1379,7 @@ Leanbot.DCMotor.setPower(power)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-Không
+Không có
 
 ### Ví dụ
 The code makes the motor rotates forward at power level of 250
