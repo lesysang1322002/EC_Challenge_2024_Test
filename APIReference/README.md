@@ -1,7 +1,7 @@
 Các hàm điều khiển Leanbot
 ---
 
-[Arduino basic reference](https://www.arduino.cc/reference/en/)
+[Arduino tham khảo](https://www.arduino.cc/reference/en/)
 
 [Leanbot](#Leanbot)
 - [Leanbot.begin](#Leanbotbegin)
