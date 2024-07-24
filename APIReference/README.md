@@ -173,7 +173,7 @@ Leanbot di chuyển tiến với tốc độ 400
 LbMotion.runLR(400, 400);
 ```
 Xem thêm:
-- [runLR.ino](Ví dụs/LbMotion/runLR.ino)
+- [runLR.ino](examples/LbMotion/runLR.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -210,7 +210,7 @@ Ví dụ này làm cho Leanbot di chuyển tiến với tốc độ 30 vòng m�
 LbMotion.runLRrpm(30, 30);
 ```
 Xem thêm:
-- [runLRrpm.ino](Ví dụs/LbMotion/runLRrpm.ino)
+- [runLRrpm.ino](examples/LbMotion/runLRrpm.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -240,7 +240,7 @@ LbMotion.stopAndWait();
 ```
 
 Xem thêm:
-- [runLRrpm.ino](Ví dụs/LbMotion/runLRrpm.ino)
+- [runLRrpm.ino](examples/LbMotion/runLRrpm.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -330,7 +330,7 @@ LbMotion.runLR(400, 400);       // let Leanbot move forward
 LbMotion.waitDistance(1500);    // wait for Leanbot to advance 1500 steps
 ```
 See more:
-- [waitDistance.ino](Ví dụs/LbMotion/waitDistance.ino)
+- [waitDistance.ino](examples/LbMotion/waitDistance.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -363,7 +363,7 @@ LbMotion.runLR(400, 400);       // let Leanbot move forward
 LbMotion.delayDistanceMm(150);  // wait for Leanbot to advance 150mm = 15cm
 ```
 See more:
-- [waitDistanceMm.ino](Ví dụs/LbMotion/waitDistanceMm.ino)
+- [waitDistanceMm.ino](examples/LbMotion/waitDistanceMm.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -396,7 +396,7 @@ LbMotion.runLR(+400, -400);      // let Leanbot rotate
 LbMotion.waitRotation(1500);     // wait for rotating 1500 steps
 ```
 See more:
-- [waitRotation.ino](Ví dụs/LbMotion/waitRotation.ino)
+- [waitRotation.ino](examples/LbMotion/waitRotation.ino)
 
 ### Chú ý
 Experiment and rotation adjustment are required to find the step value corresponding to the desired rotation angle
@@ -573,7 +573,7 @@ Không có
 LbGripper.open();
 ```
 See more:
-- [GripperOpenClose.ino](Ví dụs/LbGripper/GripperOpenClose.ino)
+- [GripperOpenClose.ino](examples/LbGripper/GripperOpenClose.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -602,7 +602,7 @@ Không có
 LbGripper.close();
 ```
 See more:
-- [GripperOpenClose.ino](Ví dụs/LbGripper/GripperOpenClose.ino)
+- [GripperOpenClose.ino](examples/LbGripper/GripperOpenClose.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -634,7 +634,7 @@ The Ví dụ moves both the gripper arms to the position 45°
 LbGripper.moveTo(45);
 ```
 See more:
-- [GripperMoveTo.ino](Ví dụs/LbGripper/GripperMoveTo.ino)
+- [GripperMoveTo.ino](examples/LbGripper/GripperMoveTo.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -670,7 +670,7 @@ The Ví dụ moves the left gripper to position 30° and the right gripper to po
 LbGripper.moveToLR(30, 60, 1500);
 ```
 See more:
-- [GripperMoveToLR.ino](Ví dụs/LbGripper/GripperMoveToLR.ino)
+- [GripperMoveToLR.ino](examples/LbGripper/GripperMoveToLR.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -766,8 +766,8 @@ Play sound with frequency 1000 Hz for 1.5 s
 Leanbot.tone(1000, 1500);
 ```
 See more:
-- [tone.ino](Ví dụs/Buzzer/tone.ino)
-- [toneDuration.ino](Ví dụs/Buzzer/toneDuration.ino)
+- [tone.ino](examples/Buzzer/tone.ino)
+- [toneDuration.ino](examples/Buzzer/toneDuration.ino)
 
 ### Chú ý
 This function is non-blocking, which means that even if you provide the duration parameter
@@ -799,7 +799,7 @@ Không có
 Leanbot.noTone();
 ```
 See more:
-- [noTone.ino](Ví dụs/Buzzer/noTone.ino)
+- [noTone.ino](examples/Buzzer/noTone.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -908,7 +908,7 @@ LbRGB[ledD] = 0x0000FF;               // set `ledD` to blue
 LbRGB.show();                         // show all Leds to diplay
 ```
 See more:
-- [setColor.ino](Ví dụs/LbRGB/setColor.ino)
+- [setColor.ino](examples/LbRGB/setColor.ino)
 
 ### Chú ý
 This function only updates the color value of a led
@@ -946,7 +946,7 @@ LbRGB.fillColor(CRGB::Green, LbSmiley);           // fill green color
 LbRGB.show();                                     // show all Leds to diplay
 ```
 See more:
-- [fillColor.ino](Ví dụs/LbRGB/fillColor.ino)
+- [fillColor.ino](examples/LbRGB/fillColor.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -986,8 +986,8 @@ byte value1A = LbTouch.read(TB1A);
 byte value2A = LbTouch.read(TB2A);
 ```
 See more:
-- [ledControl.ino](Ví dụs/LbTouch/ledControl.ino)
-- [wheelControl.ino](Ví dụs/LbTouch/wheelControl.ino)
+- [ledControl.ino](examples/LbTouch/ledControl.ino)
+- [wheelControl.ino](examples/LbTouch/wheelControl.ino)
 
 ### Chú ý
 Multiple sensors can be combined and read at once time.
@@ -1024,7 +1024,7 @@ The binary state of 4 touch sensors
 byte touchBits = LbTouch.readBits();
 ```
 See more:
-- [readBits.ino](Ví dụs/LbTouch/readBits.ino)
+- [readBits.ino](examples/LbTouch/readBits.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -1056,7 +1056,7 @@ The Ví dụ reads the touching state of the sensor `TB1A`
 bool value1A = LbTouch.onPress(TB1A);
 ```
 See more:
-- [onPress.ino](Ví dụs/LbTouch/onPress.ino)
+- [onPress.ino](examples/LbTouch/onPress.ino)
 
 ### Chú ý
 Multiple sensors can be combined and read at once time.
@@ -1098,7 +1098,7 @@ The front distance measured in centimeters
 unsigned int distanceCm = Leanbot.pingCm();
 ```
 See more:
-- [pingCm.ino](Ví dụs/Ping/pingCm.ino)
+- [pingCm.ino](examples/Ping/pingCm.ino)
 
 ### Chú ý
 The maximum sensor distance is 300 cm, outside this distance, the function will return 1,000 cm.
@@ -1173,8 +1173,8 @@ The binary state of 4 bar sensors
 byte lineState = LbIRLine.read();
 ```
 See more:
-- [readLineState.ino](Ví dụs/LbIRLine/readLineState.ino)
-- [followLine.ino](Ví dụs/LbIRLine/followLine.ino)
+- [readLineState.ino](examples/LbIRLine/readLineState.ino)
+- [followLine.ino](examples/LbIRLine/followLine.ino)
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
@@ -1315,8 +1315,8 @@ Không có
 LbIRLine.doManualCalibration(TB1A);
 ```
 See more:
-- [lineCalibration.ino](Ví dụs/LbIRLine/lineCalibration.ino)
-- [calibrationThenFollowLine.ino](Ví dụs/LbIRLine/calibrationThenFollowLine.ino)
+- [lineCalibration.ino](examples/LbIRLine/lineCalibration.ino)
+- [calibrationThenFollowLine.ino](examples/LbIRLine/calibrationThenFollowLine.ino)
 
 ### Chú ý
 It is recommended to perform this step before starting the mission or when there are changes in ambient light or moving surface.
@@ -1384,7 +1384,7 @@ The code makes the motor rotates forward at power level of 250
 Leanbot.DCMotor.setPower(250);
 ```
 See more:
-- [setPower.ino](Ví dụs/DCMotor/setPower.ino)
+- [setPower.ino](examples/DCMotor/setPower.ino)
 
 ### Chú ý
 Values out of range will be constrained between -255 and +255
