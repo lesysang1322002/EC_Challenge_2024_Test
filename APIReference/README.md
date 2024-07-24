@@ -75,7 +75,7 @@ Leanbot API Reference
 
 # Leanbot
 
-## Leanbot.begin
+## Leanbot.begin()
 
 ### Mô tả
 Hàm khởi động Leanbot
@@ -167,7 +167,7 @@ LbMotion.runLR(vL, vR)
   - Các loại dữ liệu cho phép: `int`
 
 ### Giá trị trả về
-Không có có
+Không có
 
 ### Ví dụ
 Ví dụ này làm cho Leanbot di chuyển tiến với tốc độ 400
@@ -205,7 +205,7 @@ LbMotion.runLRrpm(rpmL, rpmR)
   - Các loại dữ liệu cho phép: `int`
 
 ### Giá trị trả về
-Không có có
+Không có
 
 ### Ví dụ
 Ví dụ này làm cho Leanbot di chuyển tiến với tốc độ 30 vòng mỗi phút
