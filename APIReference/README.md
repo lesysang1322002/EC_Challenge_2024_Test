@@ -448,7 +448,7 @@ Không có
 
 ### Giá trị trả về
 Khoảng cách Leanbot đã di chuyển
-- Dơn vị: mm
+- Đơn vị: mm
 - Loại dữ liệu: `long`
 
 ### Ví dụ
