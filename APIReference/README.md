@@ -67,8 +67,6 @@ Các hàm điều khiển Leanbot
 - [Leanbot.DCMotor.setPower](#LeanbotDCMotorsetPower) -->
 
 
-&nbsp;
----
 
 # Leanbot
 
@@ -101,8 +99,6 @@ void setup() {
 Hàm này cần được gọi trong hàm `setup()`.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 [[ Leanbot ]](#Leanbot)
 ## LbDelay() 
@@ -137,8 +133,6 @@ LbMotion.runLR(0, 0);        // stop Leanbot
 Thời gian trễ cao nhất là `65,535` mili giây (≈ 65.5 giây)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 # Motion
 ![Screenshot](image/Motion.png)
@@ -178,8 +172,6 @@ Xem thêm:
 [[ Di chuyển  ]](#Di-chuyển)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 
 <!-- ## LbMotion.runLRrpm
@@ -215,10 +207,7 @@ Xem thêm:
 - [runLRrpm.ino](examples/LbMotion/runLRrpm.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
-
-[[ Motion  ]](#Motion) -->
+ -->
 ## LbMotion.stopAndWait() 
 
 ### Mô tả
@@ -245,10 +234,7 @@ Xem thêm:
 - [runLRrpm.ino](examples/LbMotion/runLRrpm.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 <!-- ## LbMotion.stopAndWait 
 
 ### Mô tả
@@ -274,10 +260,7 @@ bool isStop = LbMotion.isStop();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 ## LbMotion.isMoving
 
 ### Mô tả
@@ -305,7 +288,6 @@ bool isMoving = LbMotion.isMoving();
 &nbsp; -->
 ---
 
-[[ Motion  ]](#Motion)
 ## LbMotion.waitDistance() 
 
 ### Mô tả
@@ -335,10 +317,7 @@ See more:
 - [waitDistance.ino](examples/LbMotion/waitDistance.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 
 ## LbMotion.waitDistanceMm()
 
@@ -368,10 +347,7 @@ See more:
 - [waitDistanceMm.ino](examples/LbMotion/waitDistanceMm.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 ## LbMotion.waitRotation() 
 
 ### Mô tả
@@ -406,10 +382,7 @@ Cần phải thực nghiệm và điều chỉnh góc quay để tìm ra giá tr
 - Ví dụ: với tốc độ 500 và giá trị bước là 1750, Leanbot sẽ quay một góc khoảng 90°
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 ## LbMotion.waitRotationDeg()
 
 ### Mô tả
@@ -436,10 +409,7 @@ LbMotion.waitRotationDeg(180);     // wait for Leanbot to rotate approximately 1
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 ## LbMotion.getDistance()
 
 ### Mô tả
@@ -464,10 +434,7 @@ long distance = LbMotion.getDistance();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 ## LbMotion.getDistanceMm()
 
 ### Mô tả
@@ -493,10 +460,7 @@ long distanceMm = LbMotion.getDistanceMm();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 ## LbMotion.getRotation()
 
 ### Mô tả
@@ -521,10 +485,7 @@ long rotation = LbMotion.getRotation();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Motion  ]](#Motion)
 ## LbMotion.getRotationDeg()
 
 ### Mô tả
@@ -549,8 +510,6 @@ long rotationDegree = LbMotion.getRotationDeg();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 # Gripper
 ![Screenshot](image/LbGripper.png)
@@ -579,10 +538,7 @@ See more:
 - [GripperOpenClose.ino](examples/LbGripper/GripperOpenClose.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Gripper  ]](#Gripper)
 ## LbGripper.close() 
 
 ### Mô tả
@@ -608,10 +564,7 @@ See more:
 - [GripperOpenClose.ino](examples/LbGripper/GripperOpenClose.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Gripper  ]](#Gripper)
 ## LbGripper.moveTo() 
 
 ### Mô tả
@@ -640,10 +593,7 @@ See more:
 - [GripperMoveTo.ino](examples/LbGripper/GripperMoveTo.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Gripper  ]](#Gripper)
 ## LbGripper.moveToLR() 
 
 ### Mô tả
@@ -676,10 +626,7 @@ See more:
 - [GripperMoveToLR.ino](examples/LbGripper/GripperMoveToLR.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Gripper  ]](#Gripper)
 ## LbGripper.readL()
 
 ### Mô tả
@@ -705,10 +652,7 @@ int angleL = LbGripper.readL();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Gripper  ]](#Gripper)
 ## LbGripper.readR()
 
 ### Mô tả
@@ -734,8 +678,6 @@ int angleR = LbGripper.readR();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 # Buzzer 
 
@@ -777,10 +719,7 @@ This function is non-blocking, which means that even if you provide the duration
 the sketch execution will continue immediately even if the tone hasn't finished playing.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Buzzer  ]](#Buzzer)
 ## Leanbot.noTone()
 
 ### Mô tả
@@ -805,8 +744,6 @@ See more:
 - [noTone.ino](examples/Buzzer/noTone.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 # RGB Leds 
 ![Screenshot](image/LbRGB.png)
@@ -856,10 +793,7 @@ LbRGB.show();
 This function must be called after updating the color of the Leds.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB.clear()
 
 ### Mô tả
@@ -883,10 +817,7 @@ LbRGB.show();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB[ ]
 
 ### Mô tả
@@ -919,10 +850,7 @@ This function only updates the color value of a led
 - You have to call [LbRGB.show](#LbRGB.show) to make the leds actually show the new colors
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB.fillColor()
 
 ### Mô tả
@@ -953,8 +881,6 @@ See more:
 - [fillColor.ino](examples/LbRGB/fillColor.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 # Touch Sensors
 ![Screenshot](image/LbTouch.png)
@@ -1000,10 +926,7 @@ LbTouch.read(TB1A | TB1B)
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Touch Sensors ]](#Touch-Sensors)
 ## LbTouch.readBits()
 
 ### Mô tả
@@ -1031,10 +954,7 @@ See more:
 - [readBits.ino](examples/LbTouch/readBits.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ Touch Sensors ]](#Touch-Sensors)
 ## LbTouch.onPress()
 
 ### Mô tả
@@ -1069,8 +989,6 @@ LbTouch.onPress(TB1A | TB1B)
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 # Ultrasonic Sensor
 
@@ -1108,8 +1026,6 @@ See more:
 The maximum sensor distance is 300 cm, outside this distance, the function will return 1,000 cm.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 [[ Ultrasonic Sensor ]](#Ultrasonic-Sensor)
 ## Leanbot.pingMm()
@@ -1139,8 +1055,6 @@ unsigned int distanceMm = Leanbot.pingMm();
 The maximum sensor distance is `3,000 mm`, outside this distance, the function will return `10,000 mm`
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 # IR Sensors
 
@@ -1181,10 +1095,7 @@ See more:
 - [followLine.ino](examples/LbIRLine/followLine.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.value()
 
 ### Mô tả
@@ -1208,10 +1119,7 @@ byte lineValue = LbIRLine.value();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.print()
 
 ### Mô tả
@@ -1234,10 +1142,7 @@ LbIRLine.print();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.displayOnRGB()
 
 ### Mô tả
@@ -1262,10 +1167,7 @@ LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.isBlackDetected()
 
 ### Mô tả
@@ -1293,10 +1195,7 @@ LbMotion.stopAndWait();                  // stop
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
-[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.doManualCalibration()
 
 ### Mô tả
@@ -1326,8 +1225,6 @@ See more:
 It is recommended to perform this step before starting the mission or when there are changes in ambient light or moving surface.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 
 ## LbIRArray.read()
 
@@ -1355,8 +1252,6 @@ Serial.println(value);               // transfer the results to the computer
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
----
 <!-- 
 # DC Motor 
 
@@ -1393,6 +1288,4 @@ See more:
 ### Chú ý
 Values out of range will be constrained between -255 and +255
 
-[🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-&nbsp;
---- -->
+[🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot) -->
