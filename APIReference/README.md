@@ -8,7 +8,7 @@ Các hàm điều khiển Leanbot
 - [LbDelay](#LbDelay)
 
 
-[Di chuyển ](#Di-chuyển)
+[Motion ](#Motion)
 - [LbMotion.runLR](#LbMotionrunLR)
 - [LbMotion.stopAndWait ](#LbMotionstopAndWait)
 - [LbMotion.waitDistance ](#LbMotionwaitDistance)
@@ -21,7 +21,7 @@ Các hàm điều khiển Leanbot
 - [LbMotion.getRotationDeg](#LbMotiongetRotationDeg)
 
 
-[Tay gắp ](#Tay-gắp)
+[Gripper ](#Gripper)
 - [LbGripper.open ](#LbGripperopen)
 - [LbGripper.close ](#LbGripperclose)
 - [LbGripper.moveTo ](#LbGrippermoveTo)
@@ -140,7 +140,7 @@ Thời gian trễ cao nhất là `65,535` mili giây (≈ 65.5 giây)
 &nbsp;
 ---
 
-# Di chuyển 
+# Motion
 ![Screenshot](image/Motion.png)
 
 ## LbMotion.runLR()
@@ -552,7 +552,7 @@ long rotationDegree = LbMotion.getRotationDeg();
 &nbsp;
 ---
 
-# Tay gắp 
+# Gripper
 ![Screenshot](image/LbGripper.png)
 
 ## LbGripper.open() 
