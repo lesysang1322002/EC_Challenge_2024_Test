@@ -62,9 +62,9 @@ Các hàm điều khiển Leanbot
 - [LbIRLine.doManualCalibration ](#LbIRLinedoManualCalibration)
 - [LbIRArray.read](#LbIRArrayread)
 
-
+<!-- 
 [DC Motor ](#DC-Motor)
-- [Leanbot.DCMotor.setPower](#LeanbotDCMotorsetPower)
+- [Leanbot.DCMotor.setPower](#LeanbotDCMotorsetPower) -->
 
 
 &nbsp;
@@ -105,7 +105,7 @@ Hàm này cần được gọi trong hàm `setup()`.
 ---
 
 [[ Leanbot ]](#Leanbot)
-## LbDelay 
+## LbDelay() 
 
 ### Mô tả
 Hàm này làm cho chương trình chờ cho đến khi hết thời gian trễ được chỉ định, sau đó xử lý dòng lệnh tiếp theo.
@@ -143,7 +143,7 @@ Thời gian trễ cao nhất là `65,535` mili giây (≈ 65.5 giây)
 # Di chuyển 
 ![Screenshot](image/Motion.png)
 
-## LbMotion.runLR
+## LbMotion.runLR()
 
 ### Mô tả
 Hàm này đặt tốc độ và hướng quay cho bánh trái và bánh phải.
@@ -217,7 +217,7 @@ Xem thêm:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion) -->
-## LbMotion.stopAndWait 
+## LbMotion.stopAndWait() 
 
 ### Mô tả
 Hàm này dừng Leanbot và đợi cho đến khi Leanbot hoàn toàn dừng hẳn.
@@ -304,7 +304,7 @@ bool isMoving = LbMotion.isMoving();
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.waitDistance 
+## LbMotion.waitDistance() 
 
 ### Mô tả
 
@@ -338,7 +338,7 @@ See more:
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
 
-## LbMotion.waitDistanceMm 
+## LbMotion.waitDistanceMm()
 
 ### Mô tả
 Chương trình đợi cho đến khi Leanbot di chuyển được khoảng cách (xấp xỉ) tính bằng mm sau đó thực hiện dòng lệnh tiếp theo.
@@ -370,7 +370,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.waitRotation 
+## LbMotion.waitRotation() 
 
 ### Mô tả
 
@@ -408,7 +408,7 @@ Cần phải thực nghiệm và điều chỉnh góc quay để tìm ra giá tr
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.waitRotationDeg 
+## LbMotion.waitRotationDeg()
 
 ### Mô tả
 
@@ -438,7 +438,7 @@ LbMotion.waitRotationDeg(180);     // wait for Leanbot to rotate approximately 1
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.getDistance
+## LbMotion.getDistance()
 
 ### Mô tả
 Hàm này trả về giá trị bước mà Leanbot đã di chuyển
@@ -466,7 +466,7 @@ long distance = LbMotion.getDistance();
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.getDistanceMm
+## LbMotion.getDistanceMm()
 
 ### Mô tả
 
@@ -495,7 +495,7 @@ long distanceMm = LbMotion.getDistanceMm();
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.getRotation
+## LbMotion.getRotation()
 
 ### Mô tả
 Hàm này trả về giá trị góc mà Leanbot đã quay theo đơn vị bước
@@ -523,7 +523,7 @@ long rotation = LbMotion.getRotation();
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.getRotationDeg
+## LbMotion.getRotationDeg()
 
 ### Mô tả
 Hàm này trả về giá trị góc mà Leanbot đã quay theo đơn vị độ
@@ -553,7 +553,7 @@ long rotationDegree = LbMotion.getRotationDeg();
 # Tay gắp 
 ![Screenshot](image/LbGripper.png)
 
-## LbGripper.open 
+## LbGripper.open() 
 
 ### Mô tả
 This function moves gripper arms to open position (both arms at 0 degree position - perpendicular to the surface)
@@ -581,7 +581,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
-## LbGripper.close 
+## LbGripper.close() 
 
 ### Mô tả
 This function moves gripper arms to close position (both arms at 90 degree position - parallel to the surface)
@@ -610,7 +610,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
-## LbGripper.moveTo 
+## LbGripper.moveTo() 
 
 ### Mô tả
 This function moves both gripper arms to the same desired angle.
@@ -642,7 +642,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
-## LbGripper.moveToLR 
+## LbGripper.moveToLR() 
 
 ### Mô tả
 This function moves both gripper arms to their desired angles for a desired amount of time.
@@ -678,7 +678,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
-## LbGripper.readL
+## LbGripper.readL()
 
 ### Mô tả
 This function Giá trị trả về the current angle (in degrees) of the left gripper arm.
@@ -707,7 +707,7 @@ int angleL = LbGripper.readL();
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
-## LbGripper.readR
+## LbGripper.readR()
 
 ### Mô tả
 This function Giá trị trả về the current angle (in degrees) of the right gripper arm.
@@ -737,7 +737,7 @@ int angleR = LbGripper.readR();
 
 # Buzzer 
 
-## Leanbot.tone
+## Leanbot.tone()
 
 ### Mô tả
 This function plays sounds with the specified frequency in a duration of time.
@@ -779,7 +779,7 @@ the sketch execution will continue immediately even if the tone hasn't finished 
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Buzzer  ]](#Buzzer)
-## Leanbot.noTone
+## Leanbot.noTone()
 
 ### Mô tả
 This function stops the sound played by [Leanbot.tone](#Leanbot.tone)
@@ -1354,7 +1354,7 @@ Serial.println(value);               // transfer the results to the computer
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 &nbsp;
 ---
-
+<!-- 
 # DC Motor 
 
 ## Leanbot.DCMotor.setPower
@@ -1392,4 +1392,4 @@ Values out of range will be constrained between -255 and +255
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 &nbsp;
----
+--- -->
