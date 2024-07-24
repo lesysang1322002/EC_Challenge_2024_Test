@@ -10,7 +10,7 @@ Leanbot API Reference
 
 [Motion ](#Motion)
 - [LbMotion.runLR](#LbMotionrunLR)
-- [LbMotion.runLRrpm](#LbMotionrunLRrpm)
+<!-- - [LbMotion.runLRrpm](#LbMotionrunLRrpm) -->
 - [LbMotion.stopAndWait ](#LbMotionstopAndWait)
 <!-- - [LbMotion.isStop](#LbMotionisStop)
 - [LbMotion.isMoving](#LbMotionisMoving) -->
@@ -183,7 +183,7 @@ Xem thêm:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.runLRrpm
+<!-- ## LbMotion.runLRrpm
 
 ### Mô tả
 Hàm này đặt tốc độ (vòng quay mỗi phút) và hướng quay cho bánh trái và bánh phải.
@@ -219,7 +219,7 @@ Xem thêm:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion) -->
 ## LbMotion.stopAndWait 
 
 ### Mô tả
