@@ -100,7 +100,6 @@ Hàm này cần được gọi trong hàm `setup()`.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
-[[ Leanbot ]](#Leanbot)
 ## LbDelay() 
 
 ### Mô tả
