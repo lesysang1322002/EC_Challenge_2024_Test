@@ -10,10 +10,7 @@ Leanbot API Reference
 
 [Motion ](#Motion)
 - [LbMotion.runLR](#LbMotionrunLR)
-<!-- - [LbMotion.runLRrpm](#LbMotionrunLRrpm) -->
 - [LbMotion.stopAndWait ](#LbMotionstopAndWait)
-<!-- - [LbMotion.isStop](#LbMotionisStop) -->
-<!-- - [LbMotion.isMoving](#LbMotionisMoving) -->
 - [LbMotion.waitDistance ](#LbMotionwaitDistance)
 - [LbMotion.waitDistanceMm ](#LbMotionwaitDistanceMm)
 - [LbMotion.waitRotation ](#LbMotionwaitRotation)
