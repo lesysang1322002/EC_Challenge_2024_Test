@@ -82,7 +82,7 @@ Leanbot API Reference
 ## Leanbot.begin
 
 ### Mô tả
-This function initializes Leanbot
+Hàm khởi động Leanbot
 
 ### Cú pháp
 ```
@@ -105,9 +105,9 @@ void setup() {
 ```
 
 ### Chú ý
-This function must be called at the beginning in the `setup` function.
+Hàm này cần được gọi trong hàm `setup`.
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -115,8 +115,8 @@ This function must be called at the beginning in the `setup` function.
 ## LbDelay 
 
 ### Mô tả
-This function makes the program wait (blocking the program flow) until a specified delay time has elapsed, then process the next line of code.
-In the meantime, Leanbot keeps running at current velocities.
+Hàm này làm cho chương trình chờ cho đến khi hết thời gian trễ được chỉ định, sau đó xử lý dòng lệnh tiếp theo.
+Trong khi đó, Leanbot vẫn tiếp tục chạy các hàm khác từ trước, ví dụ như cho Leanbot đi thẳng.
 
 ### Cú pháp
 ```
@@ -124,16 +124,16 @@ LbDelay(timeMs)
 ```
 
 ### Tham số
-- `timeMs`: the number of milliseconds to wait (1000 milliseconds equals one second)
-  - Unit: ms
-  - Range: [0, 65535]
-  - Allowed data types: `unsigned int`
+- `timeMs`: Thời gian trễ milli giây (1000 mili giây bằng 1 giây)
+  - Đơn vị: ms
+  - Khoảng giá trị: [0, 65535]
+  - Kiểu dữ liệu: `unsigned int`
 
 ### Giá trị trả về
 Không
 
 ### Ví dụ
-This Ví dụ makes Leanbot moves forward at speed of 400 for 3 seconds, then stop
+Ví dụ cho Leanbot đi thẳng với vận tốc 400 trong 3 giây, rồi dừng lại
 ```
 LbMotion.runLR(400, 400);    // let Leanbot move forward
 LbDelay(3000);               // wait for 3 seconds (Leanbot keeps moving forward)
@@ -141,9 +141,9 @@ LbMotion.runLR(0, 0);        // stop Leanbot
 ```
 
 ### Chú ý
-The maximum delay time is `65,535` milliseconds (≈ 65.5 seconds)
+Thời gian trễ cao nhất là `65,535` mili giây (≈ 65.5 giây)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -173,7 +173,7 @@ Không
 LbMission.begin();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -208,7 +208,7 @@ LbMission.beginDigitalTwin(F( "ms11.1" ));
 See more:
 - [MissionDigitalTwin_ms1.1.ino](Ví dụs/LbMission/MissionDigitalTwin_ms1.1.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -241,7 +241,7 @@ See more:
 ### Chú ý
 Leanbot does not run any code after this function
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -269,7 +269,7 @@ The elapsed time since Leanbot started the mission
 long elapsedTimeMs = LbMission.elapsedMillis();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -308,7 +308,7 @@ LbMotion.runLR(400, 400);
 See more:
 - [runLR.ino](Ví dụs/LbMotion/runLR.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -344,7 +344,7 @@ LbMotion.runLRrpm(30, 30);
 See more:
 - [runLRrpm.ino](Ví dụs/LbMotion/runLRrpm.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -374,7 +374,7 @@ LbMotion.stopAndWait();
 ### Chú ý
 The higher the speed the Leanbot is running, the longer it takes to stop. The distance traveled before stopping will also be longer.
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -402,7 +402,7 @@ Không
 bool isStop = LbMotion.isStop();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -430,7 +430,7 @@ Không
 bool isMoving = LbMotion.isMoving();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -463,7 +463,7 @@ LbMotion.waitDistance(1500);    // wait for Leanbot to advance 1500 steps
 See more:
 - [waitDistance.ino](Ví dụs/LbMotion/waitDistance.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -496,7 +496,7 @@ LbMotion.delayDistanceMm(150);  // wait for Leanbot to advance 150mm = 15cm
 See more:
 - [waitDistanceMm.ino](Ví dụs/LbMotion/waitDistanceMm.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -534,7 +534,7 @@ Experiment and rotation adjustment are required to find the step value correspon
 - The step value will be different for each Leanbot, speed and moving surface
 - For Ví dụ: with speed 500 and rotation value is 1750, Leanbot will rotate an angle of approximately 90°
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -564,7 +564,7 @@ LbMotion.runLR(+500, -500);        // let Leanbot rotate right
 LbMotion.waitRotationDeg(180);     // wait for Leanbot to rotate approximately 180°
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -592,7 +592,7 @@ The traveled distance in number of steps
 long distance = LbMotion.getDistance();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -620,7 +620,7 @@ The traveled distance in millimeters
 long distanceMm = LbMotion.getDistanceMm();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -648,7 +648,7 @@ The rorated angle in number of steps
 long rotation = LbMotion.getRotation();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -676,7 +676,7 @@ The rorated angle in degrees
 long rotationDegree = LbMotion.getRotationDeg();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -706,7 +706,7 @@ LbGripper.open();
 See more:
 - [GripperOpenClose.ino](Ví dụs/LbGripper/GripperOpenClose.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -735,7 +735,7 @@ LbGripper.close();
 See more:
 - [GripperOpenClose.ino](Ví dụs/LbGripper/GripperOpenClose.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -767,7 +767,7 @@ LbGripper.moveTo(45);
 See more:
 - [GripperMoveTo.ino](Ví dụs/LbGripper/GripperMoveTo.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -803,7 +803,7 @@ LbGripper.moveToLR(30, 60, 1500);
 See more:
 - [GripperMoveToLR.ino](Ví dụs/LbGripper/GripperMoveToLR.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -832,7 +832,7 @@ The current angle (in degrees) of the left gripper arm
 int angleL = LbGripper.readL();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -861,7 +861,7 @@ The current angle (in degrees) of the right gripper arm
 int angleR = LbGripper.readR();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -904,7 +904,7 @@ See more:
 This function is non-blocking, which means that even if you provide the duration parameter
 the sketch execution will continue immediately even if the tone hasn't finished playing.
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -932,7 +932,7 @@ Leanbot.noTone();
 See more:
 - [noTone.ino](Ví dụs/Buzzer/noTone.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -983,7 +983,7 @@ LbRGB.show();
 ### Chú ý
 This function must be called after updating the color of the Leds.
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1009,7 +1009,7 @@ Không
 LbRGB.clear();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1045,7 +1045,7 @@ See more:
 This function only updates the color value of a led
 - You have to call [LbRGB.show](#LbRGB.show) to make the leds actually show the new colors
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1079,7 +1079,7 @@ LbRGB.show();                                     // show all Leds to diplay
 See more:
 - [fillColor.ino](Ví dụs/LbRGB/fillColor.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1126,7 +1126,7 @@ Multiple sensors can be combined and read at once time.
 LbTouch.read(TB1A | TB1B)
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1157,7 +1157,7 @@ byte touchBits = LbTouch.readBits();
 See more:
 - [readBits.ino](Ví dụs/LbTouch/readBits.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1195,7 +1195,7 @@ Multiple sensors can be combined and read at once time.
 LbTouch.onPress(TB1A | TB1B)
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1234,7 +1234,7 @@ See more:
 ### Chú ý
 The maximum sensor distance is 300 cm, outside this distance, the function will return 1,000 cm.
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1265,7 +1265,7 @@ unsigned int distanceMm = Leanbot.pingMm();
 ### Chú ý
 The maximum sensor distance is `3,000 mm`, outside this distance, the function will return `10,000 mm`
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1307,7 +1307,7 @@ See more:
 - [readLineState.ino](Ví dụs/LbIRLine/readLineState.ino)
 - [followLine.ino](Ví dụs/LbIRLine/followLine.ino)
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1334,7 +1334,7 @@ The 4 line sensors value
 byte lineValue = LbIRLine.value();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1360,7 +1360,7 @@ Không
 LbIRLine.print();
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1388,7 +1388,7 @@ LbIRLine.read();                     // update line state
 LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1419,7 +1419,7 @@ while ( LbIRLine.isBlackDetected() );    // keep moving as long as Leanbot can s
 LbMotion.stopAndWait();                  // stop
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1452,7 +1452,7 @@ See more:
 ### Chú ý
 It is recommended to perform this step before starting the mission or when there are changes in ambient light or moving surface.
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1481,7 +1481,7 @@ int value = LbIRArray.read(ir0L);    // read the sensor value
 Serial.println(value);               // transfer the results to the computer
 ```
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
 
@@ -1520,6 +1520,6 @@ See more:
 ### Chú ý
 Values out of range will be constrained between -255 and +255
 
-[🔼 Back to top](#leanbot-api-reference)
+[🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
 ---
