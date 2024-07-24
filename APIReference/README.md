@@ -4,8 +4,8 @@ Leanbot API Reference
 [Arduino basic reference](https://www.arduino.cc/reference/en/)
 
 [Leanbot](#Leanbot)
-- [Leanbot.begin](#Leanbotbegin)
-- [LbDelay](#LbDelay)
+- [LbDelay (blocking)](#LbDelay-%28blocking%29)
+- [LbMission.begin (blocking)](#LbMissionbegin-%28blocking%29)
 
 
 [Motion ](#Motion)
