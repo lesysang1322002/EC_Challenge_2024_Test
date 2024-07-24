@@ -49,8 +49,8 @@ Các hàm điều khiển Leanbot
 
 
 [Ultrasonic Sensor](#Ultrasonic-Sensor)
-- [Leanbot.pingCm](#Leanbot.pingCm)
-- [Leanbot.pingMm](#Leanbot.pingMm)
+- [Leanbot.pingCm](#LeanbotpingCm)
+- [Leanbot.pingMm](#LeanbotpingMm)
 
 
 [IR Sensors](#IR-Sensors)
