@@ -582,7 +582,7 @@ LbGripper.moveTo(toAngle)
 Không có
 
 ### Ví dụ
-The Ví dụ moves both the gripper arms to the position 45°
+Ví dụ moves both the gripper arms to the position 45°
 ```
 LbGripper.moveTo(45);
 ```
@@ -615,7 +615,7 @@ LbGripper.moveToLR(toAngleL, toAngleR, timeMs)
 Không có
 
 ### Ví dụ
-The Ví dụ moves the left gripper to position 30° and the right gripper to position 60° for 1.5 seconds
+Ví dụ moves the left gripper to position 30° and the right gripper to position 60° for 1.5 seconds
 ```
 LbGripper.moveToLR(30, 60, 1500);
 ```
@@ -868,7 +868,7 @@ LbRGB.fillColor(color, shape)
 Không có
 
 ### Ví dụ
-The Ví dụ sets the 4 Leds A, B, C and D (a smiley shape) to green
+Ví dụ sets the 4 Leds A, B, C and D (a smiley shape) to green
 ```
 byte LbSmiley = BITMAP(ledA, ledB, ledC, ledD);   // create smiley shape
 LbRGB.fillColor(CRGB::Green, LbSmiley);           // fill green color
@@ -907,7 +907,7 @@ The state the touch sensor
 - Data type: `byte`
 
 ### Ví dụ
-The Ví dụ reads the state of the sensors `TB1A` and `TB2A`
+Ví dụ reads the state of the sensors `TB1A` and `TB2A`
 ```
 byte value1A = LbTouch.read(TB1A);
 byte value2A = LbTouch.read(TB2A);
@@ -972,7 +972,7 @@ The touching event the touch sensor
 - Data type: `bool`
 
 ### Ví dụ
-The Ví dụ reads the touching state of the sensor `TB1A`
+Ví dụ reads the touching state of the sensor `TB1A`
 ```
 bool value1A = LbTouch.onPress(TB1A);
 ```
@@ -1184,7 +1184,7 @@ Không có
 - Data type: `bool`
 
 ### Ví dụ
-The Ví dụ lets Leanbot moving forward until the end of the black line
+Ví dụ lets Leanbot moving forward until the end of the black line
 ```
 LbMotion.runLR(400, 400);                // move forward
 while ( LbIRLine.isBlackDetected() );    // keep moving as long as Leanbot can see the black line
@@ -1242,7 +1242,7 @@ The sensor value: 0 - 768
 - Data type: `int`
 
 ### Ví dụ
-The Ví dụ reads the value of sensor `ir0L` and sends the result to the computer
+Ví dụ reads the value of sensor `ir0L` and sends the result to the computer
 ```
 int value = LbIRArray.read(ir0L);    // read the sensor value
 Serial.println(value);               // transfer the results to the computer
