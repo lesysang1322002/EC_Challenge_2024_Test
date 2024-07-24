@@ -514,7 +514,7 @@ long rotationDegree = LbMotion.getRotationDeg();
 ## LbGripper.open() 
 
 ### Mô tả
-This function moves gripper arms to open position (both arms at 0 degree position - perpendicular to the surface)
+Hàm này di chuyển các cánh tay kẹp đến vị trí mở (cả hai cánh tay ở vị trí 0 độ - vuông góc với bề mặt)
 
 ### Cú pháp
 ```
@@ -539,8 +539,7 @@ See more:
 ## LbGripper.close() 
 
 ### Mô tả
-This function moves gripper arms to close position (both arms at 90 degree position - parallel to the surface)
-
+Hàm này di chuyển cả hai cánh tay kẹp đến vị trí đóng (cả hai cánh tay ở vị trí 90 độ - song song với bề mặt)
 
 ### Cú pháp
 ```
@@ -565,7 +564,7 @@ See more:
 ## LbGripper.moveTo() 
 
 ### Mô tả
-This function moves both gripper arms to the same desired angle.
+Hàm này di chuyển cả hai cánh tay kẹp đến cùng một góc mong muốn.
 
 ### Cú pháp
 ```
@@ -573,16 +572,16 @@ LbGripper.moveTo(toAngle)
 ```
 
 ### Tham số
-- `toAngle`: the degree to move to
-  - Unit: degree (angle)
-  - Range: [-30, +120]
-  - Allowed data types: `int`
+- `toAngle`: góc cần di chuyển đến
+  - Đơn vị: độ (góc)
+  - Phạm vi: [-30, +120]
+  - Các kiểu dữ liệu cho phép: `int`
 
 ### Giá trị trả về
 Không có
 
 ### Ví dụ
-Ví dụ moves both the gripper arms to the position 45°
+Ví dụ di chuyển cả hai cánh tay kẹp đến vị trí 45°
 ```
 LbGripper.moveTo(45);
 ```
@@ -594,7 +593,7 @@ See more:
 ## LbGripper.moveToLR() 
 
 ### Mô tả
-This function moves both gripper arms to their desired angles for a desired amount of time.
+Hàm này di chuyển cả hai cánh tay kẹp đến các góc mong muốn cho một khoảng thời gian nhất định.
 
 ### Cú pháp
 ```
@@ -602,20 +601,20 @@ LbGripper.moveToLR(toAngleL, toAngleR, timeMs)
 ```
 
 ### Tham số
-- `toAngleL`: the degree for left gripper arm to move to
-- `toAngleR`: the degree for right gripper arm to move to
-  - Unit: degree (angle)
-  - Range: [-30, +120]
-  - Allowed data types: `int`
+- `toAngleL`: góc của cánh tay kẹp bên trái cần di chuyển đến
+- `toAngleR`: góc của cánh tay kẹp bên phải cần di chuyển đến
+  - Đơn vị: độ (góc)
+  - Phạm vi: [-30, +120]
+  - Các kiểu dữ liệu cho phép: `int`
 
-- `timeMs`: the time in milliseconds to move both grippers to the target angles
-  - Allowed data types: `int`
+- `timeMs`: thời gian tính bằng mili giây để di chuyển cả hai cánh tay kẹp đến các góc mục tiêu
+  - Các kiểu dữ liệu cho phép: `int`
 
 ### Giá trị trả về
 Không có
 
 ### Ví dụ
-Ví dụ moves the left gripper to position 30° and the right gripper to position 60° for 1.5 seconds
+Ví dụ di chuyển cánh tay kẹp bên trái đến vị trí 30° và cánh tay kẹp bên phải đến vị trí 60° trong 1.5 giây
 ```
 LbGripper.moveToLR(30, 60, 1500);
 ```
@@ -627,7 +626,7 @@ See more:
 ## LbGripper.readL()
 
 ### Mô tả
-This function Giá trị trả về the current angle (in degrees) of the left gripper arm.
+Hàm này trả về góc hiện tại (tính bằng độ) của cánh tay kẹp bên trái.
 
 ### Cú pháp
 ```
