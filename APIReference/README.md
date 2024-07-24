@@ -98,7 +98,7 @@ void setup() {
 ```
 
 ### Chú ý
-Hàm này cần được gọi trong hàm `setup`.
+Hàm này cần được gọi trong hàm `setup()`.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 &nbsp;
