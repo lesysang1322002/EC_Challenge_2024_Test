@@ -1,7 +1,7 @@
 Các hàm điều khiển Leanbot
 ---
 
-[Arduino tham khảo](https://www.arduino.cc/reference/en/)
+[Tài liệu tham khảo Arduino](https://www.arduino.cc/reference/en/)
 
 [Leanbot](#Leanbot)
 - [Leanbot.begin](#Leanbotbegin)
@@ -79,7 +79,6 @@ Hàm khởi động Leanbot.
 ```
 Leanbot.begin()
 ```
-
 ### Tham số
 Không có
 
@@ -879,7 +878,7 @@ Xem thêm:
 
 # Touch Sensors
 ![Screenshot](image/LbTouch.png)
-- Leanbot has 4 touch sensors: `TB1A`, `TB1B`, `TB2A` and `TB2B`
+- Leanbot có 4 cảm biến chạm: `TB1A`, `TB1B`, `TB2A` và `TB2B`
 
 ## LbTouch.read()
 
@@ -892,20 +891,20 @@ value = LbTouch.read(tbX)
 ```
 
 ### Tham số
-`tbX`: the touch sensor to read. Valid choices are:
+`tbX`: cảm biến chạm cần đọc. Các lựa chọn hợp lệ là:
 - TB1A
 - TB1B
 - TB2A
 - TB2B
 
 ### Giá trị trả về
-The state the touch sensor
-- Value `0`: the sensor is being released
-- Value `1`: the sensor is being touched
-- Data type: `byte`
+Trạng thái của cảm biến chạm
+- Giá trị `0`: cảm biến không bị chạm
+- Giá trị `1`: cảm biến đang bị chạm
+- Loại dữ liệu: `byte`
 
 ### Ví dụ
-Ví dụ reads the state of the sensors `TB1A` and `TB2A`
+Ví dụ đọc trạng thái của các cảm biến `TB1A` và `TB2A`
 ```
 byte value1A = LbTouch.read(TB1A);
 byte value2A = LbTouch.read(TB2A);
@@ -915,7 +914,7 @@ Xem thêm:
 - [wheelControl.ino](examples/LbTouch/wheelControl.ino)
 
 ### Chú ý
-Multiple sensors can be combined and read at once time.
+Nhiều cảm biến có thể được kết hợp và đọc cùng một lúc.
 ```
 LbTouch.read(TB1A | TB1B)
 ```
@@ -925,7 +924,7 @@ LbTouch.read(TB1A | TB1B)
 ## LbTouch.readBits()
 
 ### Mô tả
-This function reads the state of all 4 touch sensors.
+Hàm này đọc trạng thái của tất cả 4 cảm biến chạm.
 
 ### Cú pháp
 ```
@@ -936,10 +935,10 @@ touchBits = LbTouch.readBits()
 - Không có
 
 ### Giá trị trả về
-The binary state of 4 touch sensors
-- Value `0`: the sensor is being released
-- Value `1`: the sensor is being touched
-- Data type: `byte`
+Trạng thái nhị phân của 4 cảm biến chạm
+- Giá trị `0`: cảm biến không bị chạm
+- Giá trị `1`: cảm biến đang bị chạm
+- Loại dữ liệu: `byte`
 
 ### Ví dụ
 ```
@@ -953,7 +952,7 @@ Xem thêm:
 ## LbTouch.onPress()
 
 ### Mô tả
-This function reads the touching event of the specified touch sensors.
+Hàm này đọc sự kiện chạm của cảm biến chạm được chỉ định.
 
 ### Cú pháp
 ```
@@ -961,16 +960,16 @@ isOnPress = LbTouch.onPress(tbX)
 ```
 
 ### Tham số
-- `tbX`: the touch sensor to read
+- `tbX`: cảm biến chạm cần đọc
 
 ### Giá trị trả về
-The touching event the touch sensor
-- Value `true`: the sensor has NOT just been touched, either released or being held
-- Value `false`: the sensor has just been touched
-- Data type: `bool`
+Sự kiện chạm của cảm biến chạm
+- Giá trị `true`: cảm biến không vừa mới bị chạm, hoặc là được thả ra hoặc đang giữ
+- Giá trị `false`: cảm biến vừa mới bị chạm
+- Loại dữ liệu: `bool`
 
 ### Ví dụ
-Ví dụ reads the touching state of the sensor `TB1A`
+Ví dụ đọc trạng thái chạm của cảm biến `TB1A`
 ```
 bool value1A = LbTouch.onPress(TB1A);
 ```
@@ -978,7 +977,7 @@ Xem thêm:
 - [onPress.ino](examples/LbTouch/onPress.ino)
 
 ### Chú ý
-Multiple sensors can be combined and read at once time.
+Nhiều cảm biến có thể được kết hợp và đọc cùng một lúc.
 ```
 LbTouch.onPress(TB1A | TB1B)
 ```
@@ -988,14 +987,14 @@ LbTouch.onPress(TB1A | TB1B)
 # Ultrasonic Sensor
 
 ### Chú ý
-The ultrasonic sensor can be triggered as fast as every 50 ms, or 20 times each second
-- You should wait 50 ms before the next ping
-- This is to ensure the ultrasonic __beep__ has faded away and will not cause a false echo on the next ranging
+Cảm biến siêu âm có thể được kích hoạt nhanh nhất mỗi 50 ms, hoặc 20 lần mỗi giây
+- Bạn nên đợi 50 ms trước khi gửi tín hiệu ping tiếp theo
+- Điều này đảm bảo tiếng __bíp__ siêu âm đã tắt và sẽ không gây ra phản hồi sai trong lần đo tiếp theo
 
 ## Leanbot.pingCm()
 
 ### Mô tả
-This function sends a ping and Giá trị trả về the front distance measured in centimeters.
+Hàm này gửi một tín hiệu ping và trả về khoảng cách phía trước được đo bằng đơn vị centimet.
 
 ### Cú pháp
 ```
@@ -1006,9 +1005,9 @@ distanceCm = Leanbot.pingCm()
 Không có
 
 ### Giá trị trả về
-The front distance measured in centimeters
-- Unit: cm
-- Data type: `unsigned int`
+Khoảng cách phía trước được đo bằng đơn vị centimet
+- Đơn vị: cm
+- Loại dữ liệu: `unsigned int`
 
 ### Ví dụ
 ```
@@ -1018,7 +1017,7 @@ Xem thêm:
 - [pingCm.ino](examples/Ping/pingCm.ino)
 
 ### Chú ý
-The maximum sensor distance is 300 cm, outside this distance, the function will return 1,000 cm.
+Khoảng cách tối đa của cảm biến là 300 cm, ngoài khoảng cách này, hàm sẽ trả về 1,000 cm.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
@@ -1026,7 +1025,7 @@ The maximum sensor distance is 300 cm, outside this distance, the function will 
 ## Leanbot.pingMm()
 
 ### Mô tả
-This function sends a ping and Giá trị trả về the front distance measured in millimeters.
+Hàm này gửi một tín hiệu ping và trả về khoảng cách phía trước được đo bằng đơn vị milimet.
 
 ### Cú pháp
 ```
@@ -1037,9 +1036,9 @@ distanceMm = Leanbot.pingMm()
 Không có
 
 ### Giá trị trả về
-The front distance measured in centimeters
-- Unit: mm
-- Data type: `unsigned int`
+Khoảng cách phía trước được đo bằng đơn vị milimet
+- Đơn vị: mm
+- Loại dữ liệu: `unsigned int`
 
 ### Ví dụ
 ```
@@ -1047,25 +1046,25 @@ unsigned int distanceMm = Leanbot.pingMm();
 ```
 
 ### Chú ý
-The maximum sensor distance is `3,000 mm`, outside this distance, the function will return `10,000 mm`
+Khoảng cách tối đa của cảm biến là `3,000 mm`, ngoài khoảng cách này, hàm sẽ trả về `10,000 mm`
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
 # IR Sensors
 
 ![Screenshot](image/LbIRArray.png)
-- Leanbot has 8 IR sensors (order 0 - 7), for different purposes:
+- Leanbot có 8 cảm biến hồng ngoại (thứ tự từ 0 đến 7) với các mục đích khác nhau:
 
-| Function             | Sensors                   |
+| Chức năng             | Cảm biến                  |
 | -------------------- |:-------------------------:|
-| Line detection       | ir3R - ir1R - ir0L - ir2L |
-| Table edge detection | ir5R - ir4L               |
-| Obstacles detection  | ir7R - ir6L               |
+| Phát hiện đường       | ir3R - ir1R - ir0L - ir2L |
+| Phát hiện mép bàn     | ir5R - ir4L               |
+| Phát hiện chướng ngại | ir7R - ir6L               |
 
 ## LbIRLine.read()
 
 ### Mô tả
-This function reads the value of 4 bar sensors. Used to check the position of the black line relative to Leanbot.
+Hàm này đọc giá trị của 4 cảm biến thanh. Dùng để kiểm tra vị trí của đường đen so với Leanbot.
 
 ### Cú pháp
 ```
@@ -1076,10 +1075,10 @@ lineState = LbIRLine.read()
 Không có
 
 ### Giá trị trả về
-The binary state of 4 bar sensors
-- Value `0`: the sensor is on the white surface
-- Value `1`: the sensor is on the black line
-- Data type: `byte`
+Trạng thái nhị phân của 4 cảm biến thanh
+- Giá trị `0`: cảm biến nằm trên bề mặt trắng
+- Giá trị `1`: cảm biến nằm trên đường đen
+- Loại dữ liệu: `byte`
 
 ### Ví dụ
 ```
@@ -1094,7 +1093,7 @@ Xem thêm:
 ## LbIRLine.value()
 
 ### Mô tả
-This function Giá trị trả về the value of 4 bar sensors which are read before.
+Hàm này trả về giá trị của 4 cảm biến thanh được đọc trước đó.
 
 ### Cú pháp
 ```
@@ -1105,8 +1104,8 @@ LbIRLine.value()
 Không có
 
 ### Giá trị trả về
-The 4 line sensors value
-- Data type: `byte`
+Giá trị của 4 cảm biến đường
+- Loại dữ liệu: `byte`
 
 ### Ví dụ
 ```
@@ -1118,7 +1117,7 @@ byte lineValue = LbIRLine.value();
 ## LbIRLine.print()
 
 ### Mô tả
-This function sends the value of the 4 bar sensors (which are read before) to the computer.
+Hàm này gửi giá trị của 4 cảm biến thanh (được đọc trước đó) tới máy tính.
 
 ### Cú pháp
 ```
@@ -1141,8 +1140,8 @@ LbIRLine.print();
 ## LbIRLine.displayOnRGB()
 
 ### Mô tả
-This function displays the 4 bar sensors result on RGB Leds with color.
-- If any sensor is on the black line, the corresponding RGB Led will light up
+Hàm này hiển thị kết quả của 4 cảm biến thanh trên các đèn LED RGB với màu sắc.
+- Nếu cảm biến nào đang ở trên đường đen, đèn LED RGB tương ứng sẽ sáng lên
 
 ### Cú pháp
 ```
@@ -1150,7 +1149,7 @@ LbIRLine.displayOnRGB(color)
 ```
 
 ### Tham số
-- `color`: the [RGB color code](#RGB-color-code)
+- `color`: mã màu [RGB](#RGB-color-code)
 
 ### Giá trị trả về
 Không có
@@ -1166,7 +1165,7 @@ LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
 ## LbIRLine.isBlackDetected()
 
 ### Mô tả
-This function checks whether one of the 4 bar sensors is on the black line.
+Hàm này kiểm tra xem một trong 4 cảm biến thanh có đang ở trên đường đen không.
 
 ### Cú pháp
 ```
@@ -1177,12 +1176,12 @@ LbIRLine.isBlackDetected()
 Không có
 
 ### Giá trị trả về
-- `true` : the bars sensor is on the black line
-- `false`: the bars sensor is NOT on the black line
-- Data type: `bool`
+- `true` : cảm biến thanh đang ở trên đường đen
+- `false`: cảm biến thanh KHÔNG ở trên đường đen
+- Loại dữ liệu: `bool`
 
 ### Ví dụ
-Ví dụ lets Leanbot moving forward until the end of the black line
+Ví dụ cho Leanbot di chuyển về phía trước cho đến khi kết thúc đường đen
 ```
 LbMotion.runLR(400, 400);                // move forward
 while ( LbIRLine.isBlackDetected() );    // keep moving as long as Leanbot can see the black line
@@ -1194,7 +1193,7 @@ LbMotion.stopAndWait();                  // stop
 ## LbIRLine.doManualCalibration()
 
 ### Mô tả
-This function does 3-step light level calibration with touch button.
+Hàm này thực hiện hiệu chuẩn mức ánh sáng 3 bước với nút cảm ứng.
 
 ### Cú pháp
 ```
@@ -1202,8 +1201,8 @@ LbIRLine.doManualCalibration(tbX)
 ```
 
 ### Tham số
-- `tbX`: the touch sensor used to perform black/white sampling
-  - Leanbot has 4 touch sensors: `TB1A`, `TB1B`, `TB2A` and `TB2A`
+- `tbX`: cảm biến chạm được sử dụng để thực hiện lấy mẫu đen/trắng
+  - Leanbot có 4 cảm biến chạm: `TB1A`, `TB1B`, `TB2A` và `TB2A`
 
 ### Giá trị trả về
 Không có
@@ -1217,15 +1216,15 @@ Xem thêm:
 - [calibrationThenFollowLine.ino](examples/LbIRLine/calibrationThenFollowLine.ino)
 
 ### Chú ý
-It is recommended to perform this step before starting the mission or when there are changes in ambient light or moving surface.
+Nên thực hiện bước này trước khi bắt đầu nhiệm vụ hoặc khi có sự thay đổi về ánh sáng môi trường hoặc bề mặt di chuyển.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
 ## LbIRArray.read()
 
 ### Mô tả
-This function reads the value of the specified sensor.
-The darker the surface, the higher the sensor value.
+Hàm này đọc giá trị của cảm biến được chỉ định.
+Bề mặt càng tối, giá trị cảm biến càng cao.
 
 ### Cú pháp
 ```
@@ -1233,54 +1232,17 @@ LbIRArray.read(irX)
 ```
 
 ### Tham số
-- `irX`: the sensor to read
+- `irX`: cảm biến cần đọc
 
 ### Giá trị trả về
-The sensor value: 0 - 768
-- Data type: `int`
+Giá trị của cảm biến: 0 - 768
+- Loại dữ liệu: `int`
 
 ### Ví dụ
-Ví dụ reads the value of sensor `ir0L` and sends the result to the computer
+Ví dụ đọc giá trị của cảm biến `ir0L` và gửi kết quả tới máy tính
 ```
 int value = LbIRArray.read(ir0L);    // read the sensor value
 Serial.println(value);               // transfer the results to the computer
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
-<!-- 
-# DC Motor 
-
-## Leanbot.DCMotor.setPower
-
-### Mô tả
-This function makes the motor rotates at a desired speed in the forward or backward direction.
-The greater the power, the faster the motor rotates.
-
-### Cú pháp
-```
-Leanbot.DCMotor.setPower(power)
-```
-
-### Tham số
-- `power`: the power level
-  - Range: [-255, +255]
-  - Positive integer: turn forward
-  - Negative integer: turn backward
-  - 0: turn off
-  - Allowed data types: `int`
-
-### Giá trị trả về
-Không có
-
-### Ví dụ
-The code makes the motor rotates forward at power level of 250
-```
-Leanbot.DCMotor.setPower(250);
-```
-Xem thêm:
-- [setPower.ino](examples/DCMotor/setPower.ino)
-
-### Chú ý
-Values out of range will be constrained between -255 and +255
-
-[🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot) -->
