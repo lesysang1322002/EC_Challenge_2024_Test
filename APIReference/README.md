@@ -307,8 +307,8 @@ bool isMoving = LbMotion.isMoving();
 ## LbMotion.waitDistance 
 
 ### Mô tả
-The program waits in this function until Leanbot travels the desired distance in steps.
-Then process the next line of code.
+
+Chương trình sẽ chờ cho đến khi Leanbot đã di chuyển một khoảng cách cho trước rồi thực hiện dòng lệnh tiếp theo
 
 ### Cú pháp
 ```
@@ -316,9 +316,9 @@ LbMotion.waitDistance(distanceStep)
 ```
 
 ### Tham số
-- `distanceStep`: the number of steps to wait for Leanbot to travel
-  - Unit: steps
-  - Allowed data types: `long`
+- `distanceStep`: Khoảng cách Leanbot di chuyển
+  - Đơn vị: bước
+  - Các loại dữ liệu cho phép: `long`
 
 ### Giá trị trả về
 Không có
@@ -337,11 +337,11 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+
 ## LbMotion.waitDistanceMm 
 
 ### Mô tả
-The program waits until Leanbot has moved by (approximately) distance in millimeters.
-Then process the next line of code.
+Chương trình đợi cho đến khi Leanbot di chuyển được khoảng cách (xấp xỉ) tính bằng mm sau đó thực hiện dòng lệnh tiếp theo.
 
 ### Cú pháp
 ```
@@ -349,9 +349,9 @@ LbMotion.waitDistanceMm(distanceMm)
 ```
 
 ### Tham số
-- `distanceMm`: the distance in millimeters to travel
-  - Unit: mm
-  - Allowed data types: `int`
+- `distanceMm`: Khoảng cách Leanbot di chuyển tính bằng mm
+  - Đơn vị: mm
+  - Các loại dữ liệu cho phép: `int`
 
 ### Giá trị trả về
 Không có
