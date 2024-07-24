@@ -167,7 +167,7 @@ LbMotion.runLR(vL, vR)
 Không có
 
 ### Ví dụ
-Ví dụ này làm cho Leanbot di chuyển tiến với tốc độ 400
+Leanbot di chuyển tiến với tốc độ 400
 
 ```
 LbMotion.runLR(400, 400);
@@ -307,7 +307,7 @@ bool isMoving = LbMotion.isMoving();
 ## LbMotion.waitDistance 
 
 ### Mô tả
-The program waits (blocking the program flow) in this function until Leanbot travels the desired distance in steps.
+The program waits in this function until Leanbot travels the desired distance in steps.
 Then process the next line of code.
 
 ### Cú pháp
@@ -340,7 +340,7 @@ See more:
 ## LbMotion.waitDistanceMm 
 
 ### Mô tả
-The program waits (blocking the program flow) until Leanbot has moved by (approximately) distance in millimeters.
+The program waits until Leanbot has moved by (approximately) distance in millimeters.
 Then process the next line of code.
 
 ### Cú pháp
@@ -373,7 +373,7 @@ See more:
 ## LbMotion.waitRotation 
 
 ### Mô tả
-The program waits (blocking the program flow) until Leanbot has rotated by (approximately) the desired steps.
+The program waits until Leanbot has rotated by (approximately) the desired steps.
 Then process the next line of code.
 
 ### Cú pháp
@@ -411,7 +411,7 @@ Experiment and rotation adjustment are required to find the step value correspon
 ## LbMotion.waitRotationDeg 
 
 ### Mô tả
-The program waits (blocking the program flow) until Leanbot has rotated by (approximately) the desired degrees.
+The program waits until Leanbot has rotated by (approximately) the desired degrees.
 Then process the next line of code.
 
 ### Cú pháp
@@ -644,7 +644,7 @@ See more:
 ## LbGripper.moveToLR 
 
 ### Mô tả
-This function moves both gripper arms to their desired angles for a desired amount of time (blocking the program flow).
+This function moves both gripper arms to their desired angles for a desired amount of time.
 
 ### Cú pháp
 ```
