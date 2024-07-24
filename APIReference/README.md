@@ -441,7 +441,7 @@ LbMotion.waitRotationDeg(180);     // wait for Leanbot to rotate approximately 1
 ## LbMotion.getDistance
 
 ### Mô tả
-This function Giá trị trả về the distance in number of steps which Leanbot has traveled from origin
+Hàm này trả về giá trị bước mà Leanbot đã di chuyển
 
 ### Cú pháp
 ```
@@ -452,9 +452,9 @@ long distance = LbMotion.getDistance()
 Không có
 
 ### Giá trị trả về
-The traveled distance in number of steps
-- Unit: steps
-- Data type: `long`
+Giá trị bước mà Leanbot đã di chuyển
+- Đơn vị: bước
+- Loại dữ liệu: `long`
 
 ### Ví dụ
 ```
