@@ -12,8 +12,8 @@ Leanbot API Reference
 - [LbMotion.runLR](#LbMotionrunLR)
 - [LbMotion.runLRrpm](#LbMotionrunLRrpm)
 - [LbMotion.stopAndWait ](#LbMotionstopAndWait)
-- [LbMotion.isStop](#LbMotionisStop)
-- [LbMotion.isMoving](#LbMotionisMoving)
+<!-- - [LbMotion.isStop](#LbMotionisStop)
+- [LbMotion.isMoving](#LbMotionisMoving) -->
 - [LbMotion.waitDistance ](#LbMotionwaitDistance)
 - [LbMotion.waitDistanceMm ](#LbMotionwaitDistanceMm)
 - [LbMotion.waitRotation ](#LbMotionwaitRotation)
@@ -223,7 +223,7 @@ Xem thêm:
 ## LbMotion.stopAndWait 
 
 ### Mô tả
-Hàm này dừng Leanbot và đợi (chặn luồng chương trình) cho đến khi Leanbot giảm tốc hoàn toàn và dừng hẳn.
+Hàm này dừng Leanbot và đợi cho đến khi Leanbot giảm tốc hoàn toàn và dừng hẳn.
 
 ### Cú pháp
 ```
@@ -250,10 +250,10 @@ Xem thêm:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
-## LbMotion.stopAndWait 
+<!-- ## LbMotion.stopAndWait 
 
 ### Mô tả
-Hàm này dừng Leanbot và đợi (chặn luồng chương trình) cho đến khi Leanbot giảm tốc hoàn toàn và dừng hẳn.
+Hàm này dừng Leanbot và đợi cho đến khi Leanbot giảm tốc hoàn toàn và dừng hẳn.
 
 ### Cú pháp
 
@@ -303,7 +303,7 @@ bool isMoving = LbMotion.isMoving();
 ```
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
-&nbsp;
+&nbsp; -->
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
