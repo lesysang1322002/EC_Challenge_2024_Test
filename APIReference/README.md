@@ -829,7 +829,7 @@ There are 3 different Cú pháp to represent a RGB color:
   - Concatenate the 3 hex values of the red, green and blue together
   - Ví dụ: `0xFF0000` (red), `0x00FF00` (green), `0x0000FF` (blue)
 
-## LbRGB.show
+## LbRGB.show()
 
 ### Mô tả
 This function shows all Leds to diplay.
@@ -858,7 +858,7 @@ This function must be called after updating the color of the Leds.
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ RGB Leds  ]](#RGB-Leds)
-## LbRGB.clear
+## LbRGB.clear()
 
 ### Mô tả
 This function clears all Leds to black.
@@ -877,6 +877,7 @@ Không có
 ### Ví dụ
 ```
 LbRGB.clear();
+LbRGB.show();
 ```
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -920,7 +921,7 @@ This function only updates the color value of a led
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ RGB Leds  ]](#RGB-Leds)
-## LbRGB.fillColor
+## LbRGB.fillColor()
 
 ### Mô tả
 This function fills a shape (set of Leds) with a given RGB color.
@@ -957,7 +958,7 @@ See more:
 ![Screenshot](image/LbTouch.png)
 - Leanbot has 4 touch sensors: `TB1A`, `TB1B`, `TB2A` and `TB2B`
 
-## LbTouch.read
+## LbTouch.read()
 
 ### Mô tả
 This function reads the state of the specified touch sensors.
@@ -1001,7 +1002,7 @@ LbTouch.read(TB1A | TB1B)
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Touch Sensors ]](#Touch-Sensors)
-## LbTouch.readBits
+## LbTouch.readBits()
 
 ### Mô tả
 This function reads the state of all 4 touch sensors.
@@ -1032,7 +1033,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Touch Sensors ]](#Touch-Sensors)
-## LbTouch.onPress
+## LbTouch.onPress()
 
 ### Mô tả
 This function reads the touching event of the specified touch sensors.
@@ -1076,7 +1077,7 @@ The ultrasonic sensor can be triggered as fast as every 50 ms, or 20 times each 
 - You should wait 50 ms before the next ping
 - This is to ensure the ultrasonic __beep__ has faded away and will not cause a false echo on the next ranging
 
-## Leanbot.pingCm
+## Leanbot.pingCm()
 
 ### Mô tả
 This function sends a ping and Giá trị trả về the front distance measured in centimeters.
@@ -1109,7 +1110,7 @@ The maximum sensor distance is 300 cm, outside this distance, the function will 
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ Ultrasonic Sensor ]](#Ultrasonic-Sensor)
-## Leanbot.pingMm
+## Leanbot.pingMm()
 
 ### Mô tả
 This function sends a ping and Giá trị trả về the front distance measured in millimeters.
@@ -1150,7 +1151,7 @@ The maximum sensor distance is `3,000 mm`, outside this distance, the function w
 | Table edge detection | ir5R - ir4L               |
 | Obstacles detection  | ir7R - ir6L               |
 
-## LbIRLine.read
+## LbIRLine.read()
 
 ### Mô tả
 This function reads the value of 4 bar sensors. Used to check the position of the black line relative to Leanbot.
@@ -1182,7 +1183,7 @@ See more:
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
-## LbIRLine.value
+## LbIRLine.value()
 
 ### Mô tả
 This function Giá trị trả về the value of 4 bar sensors which are read before.
@@ -1209,7 +1210,7 @@ byte lineValue = LbIRLine.value();
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
-## LbIRLine.print
+## LbIRLine.print()
 
 ### Mô tả
 This function sends the value of the 4 bar sensors (which are read before) to the computer.
@@ -1235,7 +1236,7 @@ LbIRLine.print();
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
-## LbIRLine.displayOnRGB
+## LbIRLine.displayOnRGB()
 
 ### Mô tả
 This function displays the 4 bar sensors result on RGB Leds with color.
@@ -1263,7 +1264,7 @@ LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
-## LbIRLine.isBlackDetected
+## LbIRLine.isBlackDetected()
 
 ### Mô tả
 This function checks whether one of the 4 bar sensors is on the black line.
@@ -1294,7 +1295,7 @@ LbMotion.stopAndWait();                  // stop
 ---
 
 [[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
-## LbIRLine.doManualCalibration 
+## LbIRLine.doManualCalibration()
 
 ### Mô tả
 This function does 3-step light level calibration with touch button.
@@ -1326,7 +1327,7 @@ It is recommended to perform this step before starting the mission or when there
 &nbsp;
 ---
 
-## LbIRArray.read
+## LbIRArray.read()
 
 ### Mô tả
 This function reads the value of the specified sensor.
