@@ -168,8 +168,6 @@ LbMotion.runLR(400, 400);
 Xem thêm:
 - [runLR.ino](examples/LbMotion/runLR.ino)
 
-[[ Di chuyển  ]](#Di-chuyển)
-
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
 
