@@ -411,8 +411,8 @@ Cần phải thực nghiệm và điều chỉnh góc quay để tìm ra giá tr
 ## LbMotion.waitRotationDeg 
 
 ### Mô tả
-The program waits until Leanbot has rotated by (approximately) the desired degrees.
-Then process the next line of code.
+
+Chương trình đợi cho đến khi Leanbot xoay được (xấp xỉ) góc độ mong muốn sau đó thực hiện dòng lệnh tiếp theo.
 
 ### Cú pháp
 ```
@@ -420,9 +420,9 @@ LbMotion.waitRotationDeg(rotationDeg)
 ```
 
 ### Tham số
-- `rotationDeg`: the angle to wait for Leanbot to rotate
-  - Unit: degree (angle)
-  - Allowed data types: `int`
+- `rotationDeg`: góc Leanbot sẽ quay
+  - Đơn vị: độ
+  - Các loại dữ liệu cho phép: `int`
 
 ### Giá trị trả về
 Không có
