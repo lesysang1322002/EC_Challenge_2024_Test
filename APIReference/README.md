@@ -90,10 +90,10 @@ Leanbot.begin()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -130,7 +130,7 @@ LbDelay(timeMs)
   - Allowed data types: `unsigned int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 This Ví dụ makes Leanbot moves forward at speed of 400 for 3 seconds, then stop
@@ -163,10 +163,10 @@ LbMission.begin()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -199,7 +199,7 @@ LbMission.beginDigitalTwin(F( missionId ))
   - Allowed data types: `string`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -226,10 +226,10 @@ LbMission.end()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -257,7 +257,7 @@ elapsedTimeMs = LbMission.elapsedMillis()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The elapsed time since Leanbot started the mission
@@ -298,7 +298,7 @@ LbMotion.runLR(vL, vR)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 This Ví dụ makes Leanbot moves forward at speed of 400
@@ -334,7 +334,7 @@ LbMotion.runLRrpm(rpmL, rpmR)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 This Ví dụ makes Leanbot moves forward at 30 revolutions per minute
@@ -360,10 +360,10 @@ LbMotion.stopAndWait()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 
@@ -390,7 +390,7 @@ isStop = LbMotion.isStop()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 - `true`: Leanbot has stopped
@@ -418,7 +418,7 @@ isStop = LbMotion.isMoving()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 - `true`: Leanbot is moving
@@ -452,7 +452,7 @@ LbMotion.waitDistance(distanceStep)
   - Allowed data types: `long`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 
@@ -485,7 +485,7 @@ LbMotion.waitDistanceMm(distanceMm)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 
@@ -518,7 +518,7 @@ LbMotion.waitRotation(rotationStep)
   - Allowed data types: `long`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 
@@ -556,7 +556,7 @@ LbMotion.waitRotationDeg(rotationDeg)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -580,7 +580,7 @@ long distance = LbMotion.getDistance()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The traveled distance in number of steps
@@ -608,7 +608,7 @@ long distance = LbMotion.getDistanceMm()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The traveled distance in millimeters
@@ -636,7 +636,7 @@ long rotation = LbMotion.getRotation()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The rorated angle in number of steps
@@ -664,7 +664,7 @@ long rotationDegree = LbMotion.getRotationDeg()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The rorated angle in degrees
@@ -694,10 +694,10 @@ LbGripper.open()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -723,10 +723,10 @@ LbGripper.close()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -757,7 +757,7 @@ LbGripper.moveTo(toAngle)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 The Ví dụ moves both the gripper arms to the position 45°
@@ -793,7 +793,7 @@ LbGripper.moveToLR(toAngleL, toAngleR, timeMs)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 The Ví dụ moves the left gripper to position 30° and the right gripper to position 60° for 1.5 seconds
@@ -819,7 +819,7 @@ LbGripper.readL()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The current angle (in degrees) of the left gripper arm
@@ -848,7 +848,7 @@ LbGripper.readR()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The current angle (in degrees) of the right gripper arm
@@ -889,7 +889,7 @@ Leanbot.tone(frequency, duration)
   - Allowed data types: `unsigned int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 Play sound with frequency 1000 Hz for 1.5 s
@@ -920,10 +920,10 @@ Leanbot.noTone()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -970,10 +970,10 @@ LbRGB.show()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -999,10 +999,10 @@ LbRGB.clear()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -1029,7 +1029,7 @@ LbRGB[ledX] = color
 - `color`: the [RGB color code](#RGB-color-code)
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -1067,7 +1067,7 @@ LbRGB.fillColor(color, shape)
   - Allowed data types: `byte`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 The Ví dụ sets the 4 Leds A, B, C and D (a smiley shape) to green
@@ -1142,7 +1142,7 @@ touchBits = LbTouch.readBits()
 ```
 
 ### Tham số
-- None
+- Không
 
 ### Giá trị trả về
 The binary state of 4 touch sensors
@@ -1217,7 +1217,7 @@ distanceCm = Leanbot.pingCm()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The front distance measured in centimeters
@@ -1250,7 +1250,7 @@ distanceMm = Leanbot.pingMm()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The front distance measured in centimeters
@@ -1291,7 +1291,7 @@ lineState = LbIRLine.read()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The binary state of 4 bar sensors
@@ -1323,7 +1323,7 @@ LbIRLine.value()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 The 4 line sensors value
@@ -1350,10 +1350,10 @@ LbIRLine.print()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -1380,7 +1380,7 @@ LbIRLine.displayOnRGB(color)
 - `color`: the [RGB color code](#RGB-color-code)
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -1404,7 +1404,7 @@ LbIRLine.isBlackDetected()
 ```
 
 ### Tham số
-None
+Không
 
 ### Giá trị trả về
 - `true` : the bars sensor is on the black line
@@ -1439,7 +1439,7 @@ LbIRLine.doManualCalibration(tbX)
   - Leanbot has 4 touch sensors: `TB1A`, `TB1B`, `TB2A` and `TB2A`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 ```
@@ -1507,7 +1507,7 @@ Leanbot.DCMotor.setPower(power)
   - Allowed data types: `int`
 
 ### Giá trị trả về
-None
+Không
 
 ### Ví dụ
 The code makes the motor rotates forward at power level of 250
