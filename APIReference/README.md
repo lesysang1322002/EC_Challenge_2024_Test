@@ -175,11 +175,13 @@ LbMotion.runLR(400, 400);
 Xem thêm:
 - [runLR.ino](examples/LbMotion/runLR.ino)
 
+[[ Di chuyển  ]](#Di-chuyển)
+
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+
 <!-- ## LbMotion.runLRrpm
 
 ### Mô tả
@@ -216,7 +218,7 @@ Xem thêm:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion) -->
+[[ Motion  ]](#Motion) -->
 ## LbMotion.stopAndWait() 
 
 ### Mô tả
@@ -246,7 +248,7 @@ Xem thêm:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 <!-- ## LbMotion.stopAndWait 
 
 ### Mô tả
@@ -275,7 +277,7 @@ bool isStop = LbMotion.isStop();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 ## LbMotion.isMoving
 
 ### Mô tả
@@ -303,7 +305,7 @@ bool isMoving = LbMotion.isMoving();
 &nbsp; -->
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 ## LbMotion.waitDistance() 
 
 ### Mô tả
@@ -336,7 +338,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 
 ## LbMotion.waitDistanceMm()
 
@@ -369,7 +371,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 ## LbMotion.waitRotation() 
 
 ### Mô tả
@@ -407,7 +409,7 @@ Cần phải thực nghiệm và điều chỉnh góc quay để tìm ra giá tr
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 ## LbMotion.waitRotationDeg()
 
 ### Mô tả
@@ -437,7 +439,7 @@ LbMotion.waitRotationDeg(180);     // wait for Leanbot to rotate approximately 1
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 ## LbMotion.getDistance()
 
 ### Mô tả
@@ -465,7 +467,7 @@ long distance = LbMotion.getDistance();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 ## LbMotion.getDistanceMm()
 
 ### Mô tả
@@ -494,7 +496,7 @@ long distanceMm = LbMotion.getDistanceMm();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 ## LbMotion.getRotation()
 
 ### Mô tả
@@ -522,7 +524,7 @@ long rotation = LbMotion.getRotation();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Motion  ]](#Motion)
+[[ Motion  ]](#Motion)
 ## LbMotion.getRotationDeg()
 
 ### Mô tả
@@ -580,7 +582,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
+[[ Gripper  ]](#Gripper)
 ## LbGripper.close() 
 
 ### Mô tả
@@ -609,7 +611,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
+[[ Gripper  ]](#Gripper)
 ## LbGripper.moveTo() 
 
 ### Mô tả
@@ -641,7 +643,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
+[[ Gripper  ]](#Gripper)
 ## LbGripper.moveToLR() 
 
 ### Mô tả
@@ -677,7 +679,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
+[[ Gripper  ]](#Gripper)
 ## LbGripper.readL()
 
 ### Mô tả
@@ -706,7 +708,7 @@ int angleL = LbGripper.readL();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Gripper  ]](#Gripper)
+[[ Gripper  ]](#Gripper)
 ## LbGripper.readR()
 
 ### Mô tả
@@ -778,7 +780,7 @@ the sketch execution will continue immediately even if the tone hasn't finished 
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Buzzer  ]](#Buzzer)
+[[ Buzzer  ]](#Buzzer)
 ## Leanbot.noTone()
 
 ### Mô tả
@@ -857,7 +859,7 @@ This function must be called after updating the color of the Leds.
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ RGB Leds  ]](#RGB-Leds)
+[[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB.clear()
 
 ### Mô tả
@@ -884,7 +886,7 @@ LbRGB.show();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ RGB Leds  ]](#RGB-Leds)
+[[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB[ ]
 
 ### Mô tả
@@ -920,7 +922,7 @@ This function only updates the color value of a led
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ RGB Leds  ]](#RGB-Leds)
+[[ RGB Leds  ]](#RGB-Leds)
 ## LbRGB.fillColor()
 
 ### Mô tả
@@ -1001,7 +1003,7 @@ LbTouch.read(TB1A | TB1B)
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Touch Sensors ]](#Touch-Sensors)
+[[ Touch Sensors ]](#Touch-Sensors)
 ## LbTouch.readBits()
 
 ### Mô tả
@@ -1032,7 +1034,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Touch Sensors ]](#Touch-Sensors)
+[[ Touch Sensors ]](#Touch-Sensors)
 ## LbTouch.onPress()
 
 ### Mô tả
@@ -1109,7 +1111,7 @@ The maximum sensor distance is 300 cm, outside this distance, the function will 
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ Ultrasonic Sensor ]](#Ultrasonic-Sensor)
+[[ Ultrasonic Sensor ]](#Ultrasonic-Sensor)
 ## Leanbot.pingMm()
 
 ### Mô tả
@@ -1182,7 +1184,7 @@ See more:
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
+[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.value()
 
 ### Mô tả
@@ -1209,7 +1211,7 @@ byte lineValue = LbIRLine.value();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
+[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.print()
 
 ### Mô tả
@@ -1235,7 +1237,7 @@ LbIRLine.print();
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
+[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.displayOnRGB()
 
 ### Mô tả
@@ -1263,7 +1265,7 @@ LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
+[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.isBlackDetected()
 
 ### Mô tả
@@ -1294,7 +1296,7 @@ LbMotion.stopAndWait();                  // stop
 &nbsp;
 ---
 
-[[ Leanbot ]](#Leanbot) / [[ IR Sensors ]](#IR-Sensors)
+[[ IR Sensors ]](#IR-Sensors)
 ## LbIRLine.doManualCalibration()
 
 ### Mô tả
