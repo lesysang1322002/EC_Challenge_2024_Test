@@ -310,7 +310,7 @@ Không có
 LbMotion.runLR(400, 400);       // let Leanbot move forward
 LbMotion.waitDistance(1500);    // wait for Leanbot to advance 1500 steps
 ```
-See more:
+Xem thêm:
 - [waitDistance.ino](examples/LbMotion/waitDistance.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -340,7 +340,7 @@ Không có
 LbMotion.runLR(400, 400);       // let Leanbot move forward
 LbMotion.delayDistanceMm(150);  // wait for Leanbot to advance 150mm = 15cm
 ```
-See more:
+Xem thêm:
 - [waitDistanceMm.ino](examples/LbMotion/waitDistanceMm.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -370,7 +370,7 @@ Không có
 LbMotion.runLR(+400, -400);      // let Leanbot rotate
 LbMotion.waitRotation(1500);     // wait for rotating 1500 steps
 ```
-See more:
+Xem thêm:
 - [waitRotation.ino](examples/LbMotion/waitRotation.ino)
 
 ### Chú ý
@@ -531,7 +531,7 @@ Không có
 ```
 LbGripper.open();
 ```
-See more:
+Xem thêm:
 - [GripperOpenClose.ino](examples/LbGripper/GripperOpenClose.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -556,7 +556,7 @@ Không có
 ```
 LbGripper.close();
 ```
-See more:
+Xem thêm:
 - [GripperOpenClose.ino](examples/LbGripper/GripperOpenClose.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -585,7 +585,7 @@ Ví dụ di chuyển cả hai cánh tay kẹp đến vị trí 45°
 ```
 LbGripper.moveTo(45);
 ```
-See more:
+Xem thêm:
 - [GripperMoveTo.ino](examples/LbGripper/GripperMoveTo.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -618,7 +618,7 @@ Ví dụ di chuyển cánh tay kẹp bên trái đến vị trí 30° và cánh 
 ```
 LbGripper.moveToLR(30, 60, 1500);
 ```
-See more:
+Xem thêm:
 - [GripperMoveToLR.ino](examples/LbGripper/GripperMoveToLR.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -652,7 +652,7 @@ int angleL = LbGripper.readL();
 ## LbGripper.readR()
 
 ### Mô tả
-This function Giá trị trả về the current angle (in degrees) of the right gripper arm.
+Hàm này trả về góc hiện tại (tính bằng độ) của cánh tay kẹp bên phải.
 
 ### Cú pháp
 ```
@@ -663,10 +663,10 @@ LbGripper.readR()
 Không có
 
 ### Giá trị trả về
-The current angle (in degrees) of the right gripper arm
-- Unit: degree (angle)
-- Range: [-30, +120]
-- Data type: `int`
+Góc hiện tại (tính bằng độ) của cánh tay kẹp bên phải
+- Đơn vị: độ (góc)
+- Phạm vi: [-30, +120]
+- Kiểu dữ liệu: `int`
 
 ### Ví dụ
 ```
@@ -680,9 +680,9 @@ int angleR = LbGripper.readR();
 ## Leanbot.tone()
 
 ### Mô tả
-This function plays sounds with the specified frequency in a duration of time.
-- While playing the sound, Leanbot continues to process the next line of code
-- The sound will automatically stop after the duration, or call the [Leanbot.noTone](#Leanbot.noTone) function
+Hàm này phát âm thanh với tần số được chỉ định trong một khoảng thời gian.
+- Trong khi phát âm thanh, Leanbot tiếp tục xử lý dòng mã tiếp theo
+- Âm thanh sẽ tự động dừng lại sau khoảng thời gian, hoặc gọi hàm [Leanbot.noTone](#Leanbot.noTone)
 
 ### Cú pháp
 ```
@@ -690,36 +690,35 @@ Leanbot.tone(frequency, duration)
 ```
 
 ### Tham số
-- frequency: the frequency of the tone in Herzt (Hz)
-  - Unit: Herzt (Hz)
-  - Allowed data types: `unsigned int`
+- frequency: tần số của âm thanh tính bằng Hertz (Hz)
+  - Đơn vị: Hertz (Hz)
+  - Kiểu dữ liệu cho phép: `unsigned int`
 
-- duration: (optional) the duration of the tone in milliseconds
-  - Unit: ms
-  - Allowed data types: `unsigned int`
+- duration: (tùy chọn) khoảng thời gian của âm thanh tính bằng mili giây
+  - Đơn vị: ms
+  - Kiểu dữ liệu cho phép: `unsigned int`
 
 ### Giá trị trả về
 Không có
 
 ### Ví dụ
-Play sound with frequency 1000 Hz for 1.5 s
+Phát âm thanh với tần số 1000 Hz trong 1.5 giây
 ```
 Leanbot.tone(1000, 1500);
 ```
-See more:
+Xem thêm:
 - [tone.ino](examples/Buzzer/tone.ino)
 - [toneDuration.ino](examples/Buzzer/toneDuration.ino)
 
 ### Chú ý
-This function is non-blocking, which means that even if you provide the duration parameter
-the sketch execution will continue immediately even if the tone hasn't finished playing.
+Hàm này là không chặn (non-blocking), nghĩa là ngay cả khi bạn cung cấp tham số thời gian, việc thực thi mã sẽ tiếp tục ngay lập tức ngay cả khi âm thanh chưa phát xong.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
 ## Leanbot.noTone()
 
 ### Mô tả
-This function stops the sound played by [Leanbot.tone](#Leanbot.tone)
+Hàm này dừng âm thanh được phát bởi [Leanbot.tone](#Leanbot.tone)
 
 ### Cú pháp
 ```
@@ -736,38 +735,38 @@ Không có
 ```
 Leanbot.noTone();
 ```
-See more:
+Xem thêm:
 - [noTone.ino](examples/Buzzer/noTone.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
 # RGB Leds 
 ![Screenshot](image/LbRGB.png)
-- Leanbot has 7 RGB Leds: `ledA`, `ledB`, `ledC`, `ledD`, `ledE`, `ledF` and `ledO`
+- Leanbot có 7 đèn LED RGB: `ledA`, `ledB`, `ledC`, `ledD`, `ledE`, `ledF` và `ledO`
 
-## RGB color code
-There are 3 different Cú pháp to represent a RGB color:
-1. Color name: `CRGB::ColorName`
+## Mã màu RGB
+Có 3 cú pháp khác nhau để biểu diễn một màu RGB:
+1. Tên màu: `CRGB::ColorName`
   - Ví dụ: `CRGB::Red`, `CRGB::Green`, `CRGB::Blue`
-  - See more: [https://github.com/FastLED/FastLED/wiki/Pixel-reference#predefined-colors-list](https://github.com/FastLED/FastLED/wiki/Pixel-reference#predefined-colors-list)
+  - Xem thêm: [https://github.com/FastLED/FastLED/wiki/Pixel-reference#predefined-colors-list](https://github.com/FastLED/FastLED/wiki/Pixel-reference#predefined-colors-list)
 
-2. Decimal code: `CRGB(red, green, blue)`
-  - Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255
+2. Mã thập phân: `CRGB(red, green, blue)`
+  - Mỗi tham số (red, green và blue) định nghĩa cường độ của màu với giá trị từ 0 đến 255
   - Ví dụ:
-    - `CRGB(255, 0, 0)` is red, because red is set to highest value (255), and the other two (green and blue) are set to 0
-    - `CRGB(0, 255, 0)` is green, because green is set to highest value (255), and the other two (red and blue) are set to 0
-    - To display black, set all Tham số to 0: `CRGB(0, 0, 0)`
-    - To display white, set all Tham số to 255: `CRGB(255, 255, 255)`
-  - See more: [https://www.w3schools.com/colors/colors_picker.asp](https://www.w3schools.com/colors/colors_picker.asp)
+    - `CRGB(255, 0, 0)` là màu đỏ, vì red được đặt ở giá trị cao nhất (255), và hai giá trị còn lại (green và blue) được đặt ở 0
+    - `CRGB(0, 255, 0)` là màu xanh lá cây, vì green được đặt ở giá trị cao nhất (255), và hai giá trị còn lại (red và blue) được đặt ở 0
+    - Để hiển thị màu đen, đặt tất cả các tham số về 0: `CRGB(0, 0, 0)`
+    - Để hiển thị màu trắng, đặt tất cả các tham số về 255: `CRGB(255, 255, 255)`
+  - Xem thêm: [https://www.w3schools.com/colors/colors_picker.asp](https://www.w3schools.com/colors/colors_picker.asp)
 
-3. Hex code: `0xRRGGBB`
-  - Concatenate the 3 hex values of the red, green and blue together
-  - Ví dụ: `0xFF0000` (red), `0x00FF00` (green), `0x0000FF` (blue)
+3. Mã hex: `0xRRGGBB`
+  - Nối liền 3 giá trị hex của red, green và blue lại với nhau
+  - Ví dụ: `0xFF0000` (đỏ), `0x00FF00` (xanh lá cây), `0x0000FF` (xanh dương)
 
 ## LbRGB.show()
 
 ### Mô tả
-This function shows all Leds to diplay.
+Hàm này hiển thị tất cả các đèn LED.
 
 ### Cú pháp
 ```
@@ -786,14 +785,14 @@ LbRGB.show();
 ```
 
 ### Chú ý
-This function must be called after updating the color of the Leds.
+Hàm này phải được gọi sau khi cập nhật màu của các đèn LED.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
 ## LbRGB.clear()
 
 ### Mô tả
-This function clears all Leds to black.
+Hàm này xóa tất cả các đèn LED về màu đen.
 
 ### Cú pháp
 ```
@@ -817,7 +816,7 @@ LbRGB.show();
 ## LbRGB[ ]
 
 ### Mô tả
-This function sets a led to the given RGB color.
+Hàm này đặt một đèn LED đến màu RGB được cho.
 
 ### Cú pháp
 ```
@@ -825,8 +824,8 @@ LbRGB[ledX] = color
 ```
 
 ### Tham số
-- `ledX`: the led to be set
-- `color`: the [RGB color code](#RGB-color-code)
+- `ledX`: đèn LED cần được đặt màu
+- `color`: mã màu [RGB](#RGB-color-code)
 
 ### Giá trị trả về
 Không có
@@ -838,19 +837,19 @@ LbRGB[ledO] = CRGB(0, 255, 0);        // set `ledO` to green
 LbRGB[ledD] = 0x0000FF;               // set `ledD` to blue
 LbRGB.show();                         // show all Leds to diplay
 ```
-See more:
+Xem thêm:
 - [setColor.ino](examples/LbRGB/setColor.ino)
 
 ### Chú ý
-This function only updates the color value of a led
-- You have to call [LbRGB.show](#LbRGB.show) to make the leds actually show the new colors
+Hàm này chỉ cập nhật giá trị màu của một đèn LED
+- Bạn phải gọi [LbRGB.show](#LbRGB.show) để thực sự hiển thị các màu mới của đèn LED
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
 ## LbRGB.fillColor()
 
 ### Mô tả
-This function fills a shape (set of Leds) with a given RGB color.
+Hàm này tô màu (tập hợp các đèn LED) với màu RGB được cho.
 
 ### Cú pháp
 ```
@@ -858,22 +857,22 @@ LbRGB.fillColor(color, shape)
 ```
 
 ### Tham số
-- `color`: the [RGB color code](#RGB-color-code)
+- `color`: mã màu [RGB](#RGB-color-code)
 
-- `shape`: a set of Leds to be set
-  - Allowed data types: `byte`
+- `shape`: tập hợp các đèn LED cần đặt màu
+  - Các loại dữ liệu được phép: `byte`
 
 ### Giá trị trả về
 Không có
 
 ### Ví dụ
-Ví dụ sets the 4 Leds A, B, C and D (a smiley shape) to green
+Ví dụ đặt màu xanh lá cây cho 4 đèn LED A, B, C và D (một hình mặt cười)
 ```
 byte LbSmiley = BITMAP(ledA, ledB, ledC, ledD);   // create smiley shape
 LbRGB.fillColor(CRGB::Green, LbSmiley);           // fill green color
 LbRGB.show();                                     // show all Leds to diplay
 ```
-See more:
+Xem thêm:
 - [fillColor.ino](examples/LbRGB/fillColor.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -885,7 +884,7 @@ See more:
 ## LbTouch.read()
 
 ### Mô tả
-This function reads the state of the specified touch sensors.
+Hàm này đọc trạng thái của cảm biến chạm được chỉ định.
 
 ### Cú pháp
 ```
@@ -911,7 +910,7 @@ Ví dụ reads the state of the sensors `TB1A` and `TB2A`
 byte value1A = LbTouch.read(TB1A);
 byte value2A = LbTouch.read(TB2A);
 ```
-See more:
+Xem thêm:
 - [ledControl.ino](examples/LbTouch/ledControl.ino)
 - [wheelControl.ino](examples/LbTouch/wheelControl.ino)
 
@@ -946,7 +945,7 @@ The binary state of 4 touch sensors
 ```
 byte touchBits = LbTouch.readBits();
 ```
-See more:
+Xem thêm:
 - [readBits.ino](examples/LbTouch/readBits.ino)
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
@@ -975,7 +974,7 @@ Ví dụ reads the touching state of the sensor `TB1A`
 ```
 bool value1A = LbTouch.onPress(TB1A);
 ```
-See more:
+Xem thêm:
 - [onPress.ino](examples/LbTouch/onPress.ino)
 
 ### Chú ý
@@ -1015,7 +1014,7 @@ The front distance measured in centimeters
 ```
 unsigned int distanceCm = Leanbot.pingCm();
 ```
-See more:
+Xem thêm:
 - [pingCm.ino](examples/Ping/pingCm.ino)
 
 ### Chú ý
@@ -1086,7 +1085,7 @@ The binary state of 4 bar sensors
 ```
 byte lineState = LbIRLine.read();
 ```
-See more:
+Xem thêm:
 - [readLineState.ino](examples/LbIRLine/readLineState.ino)
 - [followLine.ino](examples/LbIRLine/followLine.ino)
 
@@ -1213,7 +1212,7 @@ Không có
 ```
 LbIRLine.doManualCalibration(TB1A);
 ```
-See more:
+Xem thêm:
 - [lineCalibration.ino](examples/LbIRLine/lineCalibration.ino)
 - [calibrationThenFollowLine.ino](examples/LbIRLine/calibrationThenFollowLine.ino)
 
@@ -1278,7 +1277,7 @@ The code makes the motor rotates forward at power level of 250
 ```
 Leanbot.DCMotor.setPower(250);
 ```
-See more:
+Xem thêm:
 - [setPower.ino](examples/DCMotor/setPower.ino)
 
 ### Chú ý
