@@ -75,7 +75,7 @@ Các hàm điều khiển Leanbot
 ## Leanbot.begin()
 
 ### Mô tả
-Hàm khởi động Leanbot
+Hàm khởi động Leanbot.
 
 ### Cú pháp
 ```
@@ -167,7 +167,7 @@ LbMotion.runLR(vL, vR)
 Không có
 
 ### Ví dụ
-Leanbot di chuyển tiến với tốc độ 400
+Leanbot di chuyển tiến với tốc độ 400.
 
 ```
 LbMotion.runLR(400, 400);
@@ -220,7 +220,7 @@ Xem thêm:
 ## LbMotion.stopAndWait 
 
 ### Mô tả
-Hàm này dừng Leanbot và đợi cho đến khi Leanbot giảm tốc hoàn toàn và dừng hẳn.
+Hàm này dừng Leanbot và đợi cho đến khi Leanbot hoàn toàn dừng hẳn.
 
 ### Cú pháp
 ```
@@ -308,7 +308,7 @@ bool isMoving = LbMotion.isMoving();
 
 ### Mô tả
 
-Chương trình sẽ chờ cho đến khi Leanbot đã di chuyển một khoảng cách cho trước rồi thực hiện dòng lệnh tiếp theo
+Chương trình sẽ chờ cho đến khi Leanbot đã di chuyển một khoảng cách cho trước rồi thực hiện dòng lệnh tiếp theo.
 
 ### Cú pháp
 ```
