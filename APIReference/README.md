@@ -8,7 +8,7 @@ Các hàm điều khiển Leanbot
 - [LbDelay](#LbDelay)
 
 
-[Motion ](#Motion)
+[Di chuyển ](#Di-chuyển)
 - [LbMotion.runLR](#LbMotionrunLR)
 - [LbMotion.stopAndWait ](#LbMotionstopAndWait)
 - [LbMotion.waitDistance ](#LbMotionwaitDistance)
@@ -21,7 +21,7 @@ Các hàm điều khiển Leanbot
 - [LbMotion.getRotationDeg](#LbMotiongetRotationDeg)
 
 
-[Gripper ](#Gripper)
+[Tay gắp ](#Tay-gắp)
 - [LbGripper.open ](#LbGripperopen)
 - [LbGripper.close ](#LbGripperclose)
 - [LbGripper.moveTo ](#LbGrippermoveTo)
@@ -140,7 +140,7 @@ Thời gian trễ cao nhất là `65,535` mili giây (≈ 65.5 giây)
 &nbsp;
 ---
 
-# Motion 
+# Di chuyển 
 ![Screenshot](image/Motion.png)
 
 ## LbMotion.runLR
@@ -469,7 +469,8 @@ long distance = LbMotion.getDistance();
 ## LbMotion.getDistanceMm
 
 ### Mô tả
-This function Giá trị trả về the distance in millimeters which Leanbot has traveled from origin
+
+Hàm này trả về giá trị khoảng cách theo mm mà Leanbot đã di chuyển
 
 ### Cú pháp
 ```
@@ -480,9 +481,9 @@ long distance = LbMotion.getDistanceMm()
 Không có
 
 ### Giá trị trả về
-The traveled distance in millimeters
-- Unit: mm
-- Data type: `long`
+Khoảng cách Leanbot đã di chuyển
+- Dơn vị: mm
+- Loại dữ liệu: `long`
 
 ### Ví dụ
 ```
@@ -497,7 +498,7 @@ long distanceMm = LbMotion.getDistanceMm();
 ## LbMotion.getRotation
 
 ### Mô tả
-This function Giá trị trả về the angle in number of steps which Leanbot has rotated from origin
+Hàm này trả về giá trị góc mà Leanbot đã quay theo đơn vị bước
 
 ### Cú pháp
 ```
@@ -508,9 +509,9 @@ long rotation = LbMotion.getRotation()
 Không có
 
 ### Giá trị trả về
-The rorated angle in number of steps
-- Unit: steps
-- Data type: `long`
+Giá trị góc đã quay của Leanbot
+- Đơn vị: bước
+- Loại giá trị: `long`
 
 ### Ví dụ
 ```
@@ -525,7 +526,7 @@ long rotation = LbMotion.getRotation();
 ## LbMotion.getRotationDeg
 
 ### Mô tả
-This function Giá trị trả về the angle in degrees which Leanbot has rotated from origin
+Hàm này trả về giá trị góc mà Leanbot đã quay theo đơn vị độ
 
 ### Cú pháp
 ```
@@ -536,9 +537,9 @@ long rotationDegree = LbMotion.getRotationDeg()
 Không có
 
 ### Giá trị trả về
-The rorated angle in degrees
-- Unit: degree (angle)
-- Data type: `long`
+Giá trị góc đã quay của Leanbot
+- Đơn vị: độ 
+- Loại dữ liệu: `long`
 
 ### Ví dụ
 ```
@@ -549,7 +550,7 @@ long rotationDegree = LbMotion.getRotationDeg();
 &nbsp;
 ---
 
-# Gripper 
+# Tay gắp 
 ![Screenshot](image/LbGripper.png)
 
 ## LbGripper.open 
