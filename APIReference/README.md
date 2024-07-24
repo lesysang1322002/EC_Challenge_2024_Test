@@ -373,8 +373,8 @@ See more:
 ## LbMotion.waitRotation 
 
 ### Mô tả
-The program waits until Leanbot has rotated by (approximately) the desired steps.
-Then process the next line of code.
+
+Chương trình sẽ chờ cho đến khi Leanbot đã quay được một góc cho trước rồi thực hiện dòng lệnh tiếp theo
 
 ### Cú pháp
 ```
@@ -382,9 +382,9 @@ LbMotion.waitRotation(rotationStep)
 ```
 
 ### Tham số
-- `rotationStep`: the number of differential steps to wait for Leanbot to rotate
-  - Unit: steps
-  - Allowed data types: `long`
+- `rotationStep`: Góc quay của Leanbot
+  - Đơn vị: bước
+  - Các loại dữ liệu cho phép: `long`
 
 ### Giá trị trả về
 Không có
@@ -399,9 +399,9 @@ See more:
 - [waitRotation.ino](examples/LbMotion/waitRotation.ino)
 
 ### Chú ý
-Experiment and rotation adjustment are required to find the step value corresponding to the desired rotation angle
-- The step value will be different for each Leanbot, speed and moving surface
-- For Ví dụ: with speed 500 and rotation value is 1750, Leanbot will rotate an angle of approximately 90°
+Cần phải thực nghiệm và điều chỉnh góc quay để tìm ra giá trị bước tương ứng với góc quay mong muốn
+- Giá trị bước sẽ khác nhau đối với mỗi Leanbot, tốc độ và bề mặt chuyển động
+- Ví dụ: với tốc độ 500 và giá trị bước là 1750, Leanbot sẽ quay một góc khoảng 90°
 
 [🔼 Trở về đầu trang](#leanbot-api-reference)
 &nbsp;
