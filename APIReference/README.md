@@ -38,7 +38,7 @@ Các hàm điều khiển Leanbot
 [RGB Leds ](#RGB-Leds)
 - [LbRGB.show](#LbRGBshow)
 - [LbRGB.clear](#LbRGBclear)
-- [LbRGB%5BledX%5D](#LbRGB%5BledX%5D)
+- [LbRGB%5BledX%5D](#LbRGB-ledX)
 - [LbRGB.fillColor](#LbRGBfillColor)
 
 
