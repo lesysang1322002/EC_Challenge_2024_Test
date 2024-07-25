@@ -1021,7 +1021,6 @@ Khoảng cách tối đa của cảm biến là 300 cm, ngoài khoảng cách n�
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
-[[ Ultrasonic Sensor ]](#Ultrasonic-Sensor)
 ## Leanbot.pingMm()
 
 ### Mô tả
