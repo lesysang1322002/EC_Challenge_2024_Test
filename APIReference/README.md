@@ -38,7 +38,7 @@ Các hàm điều khiển Leanbot
 [RGB Leds ](#RGB-Leds)
 - [LbRGB.show](#LbRGBshow)
 - [LbRGB.clear](#LbRGBclear)
-- [LbRGB[ ]](#LbRGB[-])
+- [LbRGBledX](#LbRGB[ledX])
 - [LbRGB.fillColor](#LbRGBfillColor)
 
 
@@ -812,7 +812,7 @@ LbRGB.show();
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
-## LbRGB[ ]
+## LbRGB[ledX]
 
 ### Mô tả
 Hàm này đặt một đèn LED đến màu RGB được cho.
